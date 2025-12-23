@@ -36,6 +36,38 @@ Ensure `CLIENT_ORIGIN` in `env` matches the frontend URL.
 - Frontend: `cd frontend && npm run build` → outputs to `dist/`.
 - Backend: `npm run start` (ensure `env` is set). Serve `frontend/dist` via a static host (e.g., Nginx) and proxy `/api` to the backend.
 
+## Netlify Deployment
+
+This project is configured for easy deployment on Netlify:
+
+### Frontend Deployment (Static)
+1. **Connect to GitHub**: Link your repository to Netlify
+2. **Build Settings**:
+   - Build command: `cd frontend && npm run build`
+   - Publish directory: `frontend/dist`
+   - Node version: 18
+3. **Environment Variables** (if needed):
+   - Add any required environment variables in Netlify dashboard
+4. **Deploy**: Netlify will automatically build and deploy on every push to main branch
+
+### Features Included:
+- ✅ Automatic builds on git push
+- ✅ SPA routing configured (netlify.toml)
+- ✅ Optimized production build
+- ✅ CDN distribution
+- ✅ HTTPS by default
+
+### Custom Domain:
+- Go to Site Settings → Domain Management in Netlify dashboard
+- Add your custom domain or change the Netlify subdomain
+
+## Full-Stack Deployment (Optional)
+
+For production with backend API:
+- Deploy frontend to Netlify (static)
+- Deploy backend to services like Heroku, Railway, or Vercel
+- Update `CLIENT_ORIGIN` in backend environment to match Netlify domain
+
 ## Deployment Notes
 - Set `NODE_ENV=production`.
 - Configure SMTP credentials for notifications.
