@@ -1,76 +1,156 @@
-# AstraCognix Solutions Website
+# Astracognix Frontend
 
-React + Tailwind single-page experience paired with an Express backend for inquiry handling and SQLite persistence.
+A modern React application built with Vite and Tailwind CSS for Astracognix Solutions.
 
-## Project Structure
-- `frontend/`: React (Vite), Tailwind CSS, react-router, Swiper carousel.
-- `backend/`: Express API, SQLite storage, Nodemailer for admin alerts.
+## 🚀 Features
 
-## Getting Started
-1) Install dependencies  
+- Built with React 18 and Vite
+- Styled with Tailwind CSS
+- Responsive design
+- Fast and optimized build
+- Modern UI components with Framer Motion animations
+- Contact forms with hCaptcha integration
+- Multi-page routing with React Router
+
+## 🛠️ Tech Stack
+
+- **Frontend Framework:** React 18
+- **Build Tool:** Vite
+- **Styling:** Tailwind CSS
+- **Animations:** Framer Motion
+- **Icons:** React Icons
+- **HTTP Client:** Axios
+- **Captcha:** hCaptcha
+- **Image Carousel:** Swiper
+
+## 📋 Prerequisites
+
+Before you begin, ensure you have the following installed:
+- Node.js (version 16 or higher)
+- npm or yarn
+
+## 🏃‍♂️ Local Development
+
+1. **Clone the repository:**
+   ```bash
+   git clone <your-repo-url>
+   cd astracognix-frontend
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+
+4. **Open your browser:**
+   Navigate to `http://localhost:5173` (or the port shown in your terminal)
+
+## 🏗️ Build for Production
+
+```bash
+npm run build
 ```
-cd "AstraCognix Solution Pvt. Ltd. (Website)/backend" && npm install
-cd ../frontend && npm install
+
+The built files will be in the `dist/` directory.
+
+## 🌐 Deployment to Netlify
+
+### Option 1: Deploy via Git (Recommended)
+
+1. **Connect your repository:**
+   - Push your code to GitHub, GitLab, or Bitbucket
+   - Go to [Netlify](https://netlify.com) and sign in
+   - Click "New site from Git"
+
+2. **Configure build settings:**
+   - **Branch to deploy:** `main` (or your default branch)
+   - **Build command:** `npm run build`
+   - **Publish directory:** `dist`
+
+3. **Deploy:**
+   - Click "Deploy site"
+   - Netlify will automatically build and deploy your site
+
+### Option 2: Deploy via Drag & Drop
+
+1. **Build your project:**
+   ```bash
+   npm run build
+   ```
+
+2. **Go to Netlify:**
+   - Visit [Netlify](https://netlify.com) and sign in
+   - Click "Sites" in the dashboard
+
+3. **Deploy manually:**
+   - Drag and drop the entire `dist` folder onto the deployment area
+   - Your site will be live immediately
+
+## 🔧 Netlify Configuration
+
+If you need custom configuration, create a `netlify.toml` file in your project root:
+
+```toml
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "18"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
 ```
 
-2) Configure environment  
-- Copy `backend/env.example` to `backend/env` and adjust values (ports, SMTP, allowed origin, DB path).
+## 🌍 Environment Variables
 
-3) Run locally  
-- Backend: `cd backend && npm run dev` (default http://localhost:5000)  
-- Frontend: `cd frontend && npm run dev` (default http://localhost:5173)  
-Ensure `CLIENT_ORIGIN` in `env` matches the frontend URL.
+If your application uses environment variables, you can set them in Netlify:
 
-## API
-- `POST /api/contact`
-  - Body: `{ name, email, phone?, company?, description }`
-  - Persists to SQLite table `inquiries` and sends an email if SMTP is configured.
-- `GET /api/health` for uptime checks.
+1. Go to your site dashboard in Netlify
+2. Click "Site settings" → "Environment variables"
+3. Add your variables (e.g., API endpoints, API keys)
 
-## Content Updates
-- Edit `frontend/src/data/siteContent.js` for services, stats, testimonials, portfolio items, and tech stack.
-- Hero/sections: `frontend/src/components/*.jsx`.
-- Branding assets: replace `frontend/public/logo.svg` and update colors in `frontend/tailwind.config.js`.
+## 📱 Available Scripts
 
-## Production Build
-- Frontend: `cd frontend && npm run build` → outputs to `dist/`.
-- Backend: `npm run start` (ensure `env` is set). Serve `frontend/dist` via a static host (e.g., Nginx) and proxy `/api` to the backend.
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build locally
+- `npm run lint` - Run ESLint
 
-## Netlify Deployment
+## 📂 Project Structure
 
-This project is configured for easy deployment on Netlify:
+```
+frontend/
+├── public/           # Static assets
+├── src/
+│   ├── components/   # Reusable components
+│   ├── pages/        # Page components
+│   ├── data/         # Static data
+│   ├── App.jsx       # Main app component
+│   └── main.jsx      # Entry point
+├── dist/             # Built files (generated)
+└── package.json
+```
 
-### Frontend Deployment (Static)
-1. **Connect to GitHub**: Link your repository to Netlify
-2. **Build Settings**:
-   - Build command: `cd frontend && npm run build`
-   - Publish directory: `frontend/dist`
-   - Node version: 18
-3. **Environment Variables** (if needed):
-   - Add any required environment variables in Netlify dashboard
-4. **Deploy**: Netlify will automatically build and deploy on every push to main branch
+## 🤝 Contributing
 
-### Features Included:
-- ✅ Automatic builds on git push
-- ✅ SPA routing configured (netlify.toml)
-- ✅ Optimized production build
-- ✅ CDN distribution
-- ✅ HTTPS by default
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature-name`
+3. Commit your changes: `git commit -m 'Add some feature'`
+4. Push to the branch: `git push origin feature-name`
+5. Open a pull request
 
-### Custom Domain:
-- Go to Site Settings → Domain Management in Netlify dashboard
-- Add your custom domain or change the Netlify subdomain
+## 📄 License
 
-## Full-Stack Deployment (Optional)
+This project is private and proprietary to Astracognix Solutions.
 
-For production with backend API:
-- Deploy frontend to Netlify (static)
-- Deploy backend to services like Heroku, Railway, or Vercel
-- Update `CLIENT_ORIGIN` in backend environment to match Netlify domain
+## 📞 Support
 
-## Deployment Notes
-- Set `NODE_ENV=production`.
-- Configure SMTP credentials for notifications.
-- Back up `backend/data/contact.db` if using the default SQLite path.
-- Add HTTPS and WAF/rate-limiting at the edge; keep CORS restricted to your domain.
-
+For support or questions, contact the development team at Astracognix Solutions.
