@@ -1,110 +1,59 @@
 # Dependencies
 node_modules/
-**/node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
-package-lock.json
-yarn.lock
-pnpm-lock.yaml
-
-# Environment Variables (IMPORTANT: Never commit .env files!)
-.env
-.env.local
-.env.development
-.env.production
-.env.test
-**/.env
-**/.env.local
-**/.env.*.local
-server/.env
-client/.env
-
-# Build outputs
-dist/
-build/
-**/dist/
-**/build/
-client/dist/
-server/dist/
-*.tsbuildinfo
-
-# Logs
-logs/
-*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-# Uploads directory (user-uploaded files)
-server/uploads/*
-!server/uploads/.gitkeep
-uploads/*
-!uploads/.gitkeep
-
-# Database
-*.db
-*.sqlite
-*.sqlite3
-
-# OS Files
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
-desktop.ini
-*.swp
-*.swo
-*~
-
-# IDE and Editor files
-.vscode/
-.idea/
-*.sublime-project
-*.sublime-workspace
-*.code-workspace
-*.iml
-.project
-.classpath
-.settings/
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
-
-# Testing
-coverage/
-.nyc_output/
-*.lcov
-.jest/
-
-# Temporary files
-*.tmp
-*.temp
-*.cache
-.cache/
-.temp/
-tmp/
-temp/
-
-# Production files
+# Runtime data
+pids
 *.pid
 *.seed
 *.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# nyc test coverage
+.nyc_output
+
+# Grunt intermediate storage (https://gruntjs.com/creating-plugins#storing-task-files)
+.grunt
+
+# Bower dependency directory (https://bower.io/)
+bower_components
+
+# node-waf configuration
+.lock-wscript
+
+# Compiled binary addons (https://nodejs.org/api/addons.html)
+build/Release
+
+# Dependency directories
+jspm_packages/
+
+# Snowpack dependency directory (https://snowpack.dev/)
+web_modules/
+
+# TypeScript cache
+*.tsbuildinfo
 
 # Optional npm cache directory
 .npm
 
 # Optional eslint cache
 .eslintcache
+
+# Optional stylelint cache
+.stylelintcache
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
 
 # Optional REPL history
 .node_repl_history
@@ -115,19 +64,38 @@ temp/
 # Yarn Integrity file
 .yarn-integrity
 
-# parcel-bundler cache
+# dotenv environment variable files
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+
+# parcel-bundler cache (https://parceljs.org/)
+.cache
 .parcel-cache
 
-# Next.js
-.next/
-out/
+# Next.js build output
+.next
+out
 
-# Nuxt.js
-.nuxt/
-dist/
+# Nuxt.js build / generate output
+.nuxt
+dist
 
-# Vite
-.vite/
+# Gatsby files
+.cache/
+public
+
+# Vuepress build output
+.vuepress/dist
+
+# Vuepress v2.x temp and cache directory
+.temp
+.cache
+
+# Docusaurus cache and generated files
+.docusaurus
 
 # Serverless directories
 .serverless/
@@ -151,40 +119,123 @@ dist/
 .yarn/install-state.gz
 .pnp.*
 
-# TypeScript
-*.tsbuildinfo
-
-# Python (if any scripts)
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
-
-# Backup files
-*.bak
-*.backup
-*.old
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
 *~
 
-# Seed output files
-server/seed_output.txt
-seed_output.txt
+# Cursor IDE
+.cursor/
 
-# Test files
-test.txt
-server/test.txt
-**/test.txt
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
 
-# Render specific
-.render/
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
 
-# Local development
-.local/
-local/
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
 
+# Linux
+*~
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables file
+.env
+.env.test
+.env.production
+.env.local
+
+# parcel-bundler cache (https://parceljs.org/)
+.cache
+.parcel-cache
+
+# Next.js build output
+.next
+
+# Nuxt.js build / generate output
+.nuxt
+
+# Gatsby files
+.cache/
+
+# Storybook build outputs
+.out
+.storybook-out
+
+# Temporary folders
+tmp/
+temp/
+
+# Build directories
+build/
+dist/
+client/dist/
+
+# Upload directories (for file uploads)
+uploads/
+server/uploads/
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Testing
+coverage/
+.nyc_output/
+
+# Cypress
+cypress/videos/
+cypress/screenshots/
+
+# Local development files
+.local
+
+# Vercel
+.vercel
+
+# Turbo
+.turbo
+
+# Sentry Config File
+.sentryclirc
+
+# Miscellaneous
+.cache/
+*.tgz
+*.tar.gz
