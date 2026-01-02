@@ -66,12 +66,7 @@ client-car-services-panta/
 └── package.json            # Root package configuration
 ```
 
-## 🚀 Getting Started
 
-### Prerequisites
-- Node.js (v16 or higher)
-- MongoDB (local or cloud instance)
-- npm or yarn package manager
 
 ### Installation
 
