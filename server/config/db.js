@@ -14,7 +14,7 @@ const connectDB = async () => {
         } catch (localError) {
             console.error(`Local MongoDB Connection Error: ${localError.message}`);
             console.log('Warning: Database not available. Some features may not work.');
-            // Don't exit 
+           
         }
     }
 };
