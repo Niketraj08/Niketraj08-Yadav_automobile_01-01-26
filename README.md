@@ -72,7 +72,7 @@ client-car-services-panta/
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
+   git clone <repository-url to copy and paste>
    cd client-car-services-panta
    ```
 
