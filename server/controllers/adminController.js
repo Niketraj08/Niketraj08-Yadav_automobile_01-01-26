@@ -25,7 +25,6 @@ const getDashboardStats = async (req, res) => {
     }
 };
 
-// @desc    Get all users
 const getUsers = async (req, res) => {
     try {
         const users = await User.find({});
