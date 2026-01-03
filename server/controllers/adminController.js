@@ -27,7 +27,7 @@ const getDashboardStats = async (req, res) => {
 
 // @desc    Get all users
 // @route   GET /api/admin/users
-// @access  Private/Admin
+
 const getUsers = async (req, res) => {
     try {
         const users = await User.find({});
