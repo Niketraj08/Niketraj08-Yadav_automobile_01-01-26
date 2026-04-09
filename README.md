@@ -4,8 +4,6 @@ A full-stack web application for car services that allows users to browse, book,
 
 ## 🚗 Features
 
-my name is niket raj and i am fronted devloper and i currently my pursing to my btech in gandhi engineering college 
-
 ### For Users
 - **Browse Cars**: View detailed listings of available cars with images and specifications
 - **Car Details**: In-depth information about each vehicle including features and pricing
