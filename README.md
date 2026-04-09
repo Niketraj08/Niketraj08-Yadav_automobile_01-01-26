@@ -4,7 +4,7 @@ A full-stack web application for car services that allows users to browse, book,
 
 ## 🚗 Features
 
-search the car and to use the feature and use all feature to useful and all thigh to use unbitablt and this website to use the car selling the function the the use to all thinfgs and also
+my name is niket raj and i am fronted devloper and i currently my pursing to my btech in gandhi engineering college 
 
 ### For Users
 - **Browse Cars**: View detailed listings of available cars with images and specifications
