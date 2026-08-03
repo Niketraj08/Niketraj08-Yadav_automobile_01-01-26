@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #1e242a;
+    font-family: 'Poppins', sans-serif;
+    color: beige;
+
+}
+.niket{
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+ li{
+display: block;
+}

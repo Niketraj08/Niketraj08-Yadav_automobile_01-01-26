@@ -1,0 +1,319 @@
+.rzp-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.rzp-modal {
+  width: 100%;
+  max-width: 440px;
+  background: #0d1117;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color: #f0f6fc;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.rzp-header {
+  background: #161b22;
+  padding: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rzp-merchant-info h2 {
+  font-size: 1.15rem;
+  margin: 0.25rem 0;
+  font-weight: 600;
+  color: #fff;
+}
+
+.rzp-logo-text {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #8b949e;
+  font-weight: 700;
+}
+
+.rzp-logo-text .secure {
+  color: #3399cc;
+  font-weight: 800;
+}
+
+.rzp-order-num {
+  font-size: 0.75rem;
+  color: #8b949e;
+  margin: 0;
+}
+
+.rzp-amount {
+  text-align: right;
+}
+
+.rzp-amount .label {
+  display: block;
+  font-size: 0.7rem;
+  color: #8b949e;
+}
+
+.rzp-amount .val {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #3399cc;
+}
+
+.rzp-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  color: #8b949e;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+}
+
+.rzp-close:hover {
+  color: #fff;
+}
+
+/* Body */
+.rzp-body {
+  padding: 1.5rem;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.rzp-body h3 {
+  font-size: 1rem;
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Methods */
+.rzp-methods-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.rzp-method-btn {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: #161b22;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  color: #f0f6fc;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.2s ease;
+}
+
+.rzp-method-btn:hover {
+  background: #21262d;
+  border-color: #3399cc;
+  transform: translateY(-2px);
+}
+
+.rzp-method-btn .icon {
+  font-size: 1.5rem;
+}
+
+.rzp-method-btn .text strong {
+  display: block;
+  font-size: 0.95rem;
+}
+
+.rzp-method-btn .text span {
+  font-size: 0.75rem;
+  color: #8b949e;
+}
+
+/* Form Styles */
+.rzp-back {
+  background: none;
+  border: none;
+  color: #8b949e;
+  font-size: 0.8rem;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.rzp-back:hover {
+  color: #3399cc;
+}
+
+.rzp-form-group {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.rzp-form-group label {
+  font-size: 0.75rem;
+  color: #8b949e;
+  text-transform: uppercase;
+}
+
+.rzp-form-group input {
+  background: #161b22;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+  padding: 0.75rem;
+  color: #fff;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.rzp-form-group input:focus {
+  border-color: #3399cc;
+  box-shadow: 0 0 0 1px #3399cc;
+}
+
+.rzp-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.rzp-row > .rzp-form-group {
+  flex: 1;
+}
+
+.rzp-pay-btn {
+  background: #3399cc;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.85rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: all 0.2s ease;
+}
+
+.rzp-pay-btn:hover:not(:disabled) {
+  background: #2b82ad;
+}
+
+.rzp-pay-btn:disabled {
+  background: rgba(51, 153, 204, 0.2);
+  color: rgba(255, 255, 255, 0.3);
+  cursor: not-allowed;
+}
+
+.rzp-help-text {
+  font-size: 0.8rem;
+  color: #8b949e;
+  margin: 0 0 1rem;
+}
+
+/* Bank Grid */
+.rzp-bank-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.rzp-bank-btn {
+  background: #161b22;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+  padding: 0.75rem 0.5rem;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.rzp-bank-btn:hover {
+  background: #21262d;
+  border-color: #8b949e;
+}
+
+.rzp-bank-btn.active {
+  background: rgba(51, 153, 204, 0.15);
+  border-color: #3399cc;
+  color: #3399cc;
+}
+
+/* Status Screen */
+.rzp-step-status {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.rzp-spinner {
+  width: 48px;
+  height: 48px;
+  border: 4px solid rgba(51, 153, 204, 0.1);
+  border-top-color: #3399cc;
+  border-radius: 50%;
+  margin: 0 auto 1.5rem;
+  animation: rzp-spin 1s linear infinite;
+}
+
+@keyframes rzp-spin {
+  to { transform: rotate(360deg); }
+}
+
+.rzp-success-icon {
+  width: 64px;
+  height: 64px;
+  background: rgba(46, 204, 113, 0.15);
+  border: 2px solid #2ecc71;
+  border-radius: 50%;
+  color: #2ecc71;
+  font-size: 2rem;
+  line-height: 60px;
+  margin: 0 auto 1.5rem;
+  text-align: center;
+}
+
+.rzp-hint {
+  font-size: 0.75rem;
+  color: #f1c40f;
+  margin-bottom: 1.5rem;
+}
+
+/* Footer */
+.rzp-footer {
+  background: #161b22;
+  padding: 0.85rem;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.rzp-footer span {
+  font-size: 0.7rem;
+  color: #8b949e;
+  letter-spacing: 0.5px;
+}

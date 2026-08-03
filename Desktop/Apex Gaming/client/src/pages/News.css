@@ -1,0 +1,75 @@
+.game-tabs {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.game-tab {
+  background: transparent;
+  border: 1px solid var(--glass-border);
+  padding: 0.6rem 1.5rem;
+  color: var(--gray);
+  font-family: var(--font-tech);
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: var(--transition);
+}
+
+.game-tab:hover {
+  border-color: rgba(255, 107, 0, 0.3);
+  color: var(--white);
+}
+
+.game-tab.active {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--white);
+}
+
+.news-card {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  overflow: hidden;
+}
+
+.news-card-image {
+  width: 100%;
+  aspect-ratio: 16/9;
+  background: rgba(255, 255, 255, 0.05);
+  overflow: hidden;
+}
+
+.news-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition);
+}
+
+.news-card:hover .news-card-image img {
+  transform: scale(1.05);
+}
+
+.news-card-body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.news-card-body h3 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.news-card-body p {
+  color: var(--gray-light);
+  font-size: 0.9rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

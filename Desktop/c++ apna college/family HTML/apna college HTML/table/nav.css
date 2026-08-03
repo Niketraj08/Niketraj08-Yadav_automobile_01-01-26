@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #1e242a;
+    font-family: 'Poppins', sans-serif;
+
+}
+/* 
+body{
+    background: #1e242a;
+    font-family: 'Poppins', sans-serif;
+} */
+
+#menu{
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 2px;
+    margin-right: 80px;
+    margin-top: 20px;
+    float: right;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    /* display: inline; */
+}
+
+#menu ul{
+    list-style: none;
+}
+
+#menu ul li{
+    display: inline-block;
+    margin-left: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#menu ul li:hover{
+    scale: 120%;
+}
+
+/* @keyframes anim4{
+    from{
+        top:  -100%;
+    }
+    to{
+        top:  0%;
+    }
+
+} */
+
+
+
+

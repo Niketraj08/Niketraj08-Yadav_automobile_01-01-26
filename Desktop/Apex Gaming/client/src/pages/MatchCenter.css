@@ -1,0 +1,26 @@
+.live-section { background: linear-gradient(180deg, rgba(255,0,0,0.05) 0%, transparent 100%); }
+.live-match-card { padding: 2rem; text-align: center; margin-bottom: 1rem; }
+.live-teams { display: flex; align-items: center; justify-content: center; gap: 2rem; margin-top: 1rem; }
+.live-team { display: flex; flex-direction: column; gap: 0.5rem; }
+.live-team span:first-child { font-family: var(--font-display); font-weight: 700; text-transform: uppercase; }
+.live-score { font-family: var(--font-display); font-size: 2.5rem; font-weight: 800; color: var(--primary); }
+.live-vs { color: var(--gray); font-size: 0.9rem; }
+
+.match-list { display: flex; flex-direction: column; gap: 0.75rem; }
+.match-row {
+  display: grid;
+  grid-template-columns: 120px 1fr 120px 100px;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+}
+.match-date { color: var(--gray); font-size: 0.85rem; }
+.match-teams-row { display: flex; align-items: center; gap: 1rem; justify-content: center; }
+.team-name { font-family: var(--font-display); font-weight: 600; font-size: 0.9rem; text-transform: uppercase; }
+.team-name.winner { color: var(--primary); }
+.match-vs { color: var(--gray); font-size: 0.8rem; }
+.match-round { color: var(--gray); font-size: 0.85rem; text-align: center; }
+
+@media (max-width: 768px) {
+  .match-row { grid-template-columns: 1fr; text-align: center; gap: 0.5rem; }
+}

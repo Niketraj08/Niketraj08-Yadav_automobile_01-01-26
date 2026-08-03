@@ -1,0 +1,184 @@
+.drop-locations-page {
+  position: relative;
+  min-height: 100vh;
+  padding-top: 80px; /* Header offset */
+  background: var(--black);
+  display: flex;
+  flex-direction: column;
+}
+
+.map-viewer-container {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 2rem;
+  padding: 2rem;
+  flex: 1;
+  max-width: 1600px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.map-image-wrapper {
+  position: relative;
+  background: rgba(5, 5, 8, 0.8);
+  border: 1px solid rgba(255, 107, 0, 0.15);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 0 50px rgba(0,0,0,0.8);
+}
+
+.map-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+.map-grid-overlay {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(rgba(255, 107, 0, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 107, 0, 0.1) 1px, transparent 1px);
+  background-size: 50px 50px;
+  pointer-events: none;
+}
+
+.map-marker {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: var(--primary);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px var(--primary);
+  cursor: pointer;
+  z-index: 10;
+}
+
+.map-marker::after {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  border: 1px solid var(--primary);
+  border-radius: 50%;
+  animation: pulse-marker-ring 2s infinite;
+}
+
+@keyframes pulse-marker-ring {
+  0% { transform: scale(1); opacity: 1; }
+  100% { transform: scale(2.5); opacity: 0; }
+}
+
+.marker-tooltip {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(5, 5, 8, 0.9);
+  border: 1px solid var(--primary);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-family: var(--font-tech);
+  font-size: 0.75rem;
+  color: var(--white);
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transition: var(--transition);
+  z-index: 20;
+}
+
+.map-marker:hover .marker-tooltip {
+  opacity: 1;
+  top: -45px;
+}
+
+.teams-sidebar {
+  background: rgba(5, 5, 8, 0.6);
+  border: 1px solid rgba(255, 107, 0, 0.1);
+  border-radius: 8px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  backdrop-filter: blur(10px);
+}
+
+.teams-sidebar-header {
+  border-bottom: 1px solid rgba(255, 107, 0, 0.2);
+  padding-bottom: 1rem;
+}
+
+.teams-sidebar-header h2 {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--white);
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+}
+
+.teams-sidebar-header p {
+  font-family: var(--font-tech);
+  color: var(--primary);
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+}
+
+.teams-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  overflow-y: auto;
+  max-height: 600px;
+  padding-right: 0.5rem;
+}
+
+.team-drop-item {
+  background: rgba(255, 255, 255, 0.03);
+  border-left: 2px solid var(--primary);
+  padding: 0.75rem 1rem;
+  border-radius: 0 4px 4px 0;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.team-drop-item:hover {
+  background: rgba(255, 107, 0, 0.1);
+  transform: translateX(4px);
+}
+
+.team-drop-item.active {
+  background: rgba(255, 107, 0, 0.15);
+  border-left-width: 4px;
+}
+
+.team-name {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  color: var(--white);
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.drop-spot {
+  font-family: var(--font-tech);
+  font-size: 0.75rem;
+  color: var(--gray-light);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .map-viewer-container {
+    grid-template-columns: 1fr;
+  }
+  .map-image-wrapper {
+    aspect-ratio: 4/3;
+  }
+}

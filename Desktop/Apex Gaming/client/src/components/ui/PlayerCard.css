@@ -1,0 +1,92 @@
+.player-card {
+  perspective: 1000px;
+  cursor: pointer;
+}
+.player-card-inner {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  background: var(--glass);
+  border: 1px solid var(--glass-border);
+  transition: var(--transition);
+  transform-style: preserve-3d;
+}
+.player-card:hover .player-card-inner {
+  transform: rotateY(5deg) rotateX(-5deg) translateY(-8px);
+  border-color: rgba(255, 107, 0, 0.4);
+  box-shadow: 0 20px 40px rgba(255, 107, 0, 0.2);
+}
+.player-card-photo {
+  aspect-ratio: 3/4;
+  background: linear-gradient(180deg, var(--dark-3) 0%, var(--dark-2) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.player-card-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.player-card-photo .initials {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  color: var(--primary);
+  opacity: 0.5;
+}
+.player-card-photo::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60%;
+  background: linear-gradient(transparent, rgba(10, 10, 15, 0.95));
+}
+.player-card-info {
+  padding: 1.25rem;
+  position: relative;
+}
+.player-card-info .ign {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.player-card-info .real-name {
+  color: var(--gray);
+  font-size: 0.9rem;
+  margin-top: 0.25rem;
+}
+.player-card-meta {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+  flex-wrap: wrap;
+}
+.player-card-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--glass-border);
+}
+.player-card-stats .stat {
+  text-align: center;
+}
+.player-card-stats .stat-value {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  color: var(--primary);
+  font-weight: 700;
+}
+.player-card-stats .stat-label {
+  font-size: 0.7rem;
+  color: var(--gray);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}

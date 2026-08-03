@@ -1,0 +1,124 @@
+.admin-layout {
+  display: flex;
+  min-height: 100vh;
+  background: var(--black);
+}
+.admin-sidebar {
+  width: 260px;
+  background: var(--dark-2);
+  border-right: 1px solid var(--glass-border);
+  padding: 1.5rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  overflow-y: auto;
+  z-index: 100;
+}
+.admin-sidebar .logo {
+  padding: 0 1.5rem 1.5rem;
+  border-bottom: 1px solid var(--glass-border);
+  margin-bottom: 1rem;
+}
+.admin-nav a {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1.5rem;
+  color: var(--gray-light);
+  font-weight: 500;
+  transition: var(--transition);
+  font-size: 0.95rem;
+}
+.admin-nav a:hover, .admin-nav a.active {
+  color: var(--primary);
+  background: rgba(255, 107, 0, 0.08);
+  border-right: 3px solid var(--primary);
+}
+.admin-main {
+  flex: 1;
+  margin-left: 260px;
+  padding: 2rem;
+}
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.admin-header h1 {
+  font-size: 1.75rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.stat-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+.admin-stat {
+  padding: 1.5rem;
+  text-align: center;
+}
+.admin-stat .value {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--primary);
+}
+.admin-stat .label {
+  color: var(--gray);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 0.25rem;
+}
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.admin-table th, .admin-table td {
+  padding: 0.875rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--glass-border);
+}
+.admin-table th {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--gray);
+  font-weight: 600;
+}
+.admin-table tr:hover td { background: rgba(255, 107, 0, 0.03); }
+.admin-actions { display: flex; gap: 0.5rem; }
+.admin-actions button {
+  padding: 0.35rem 0.75rem;
+  border: 1px solid var(--glass-border);
+  background: var(--glass);
+  color: var(--gray-light);
+  border-radius: 4px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.admin-actions button:hover { border-color: var(--primary); color: var(--primary); }
+.admin-actions button.danger:hover { border-color: #ff4444; color: #ff4444; }
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gradient-dark);
+}
+.login-card {
+  width: 100%;
+  max-width: 420px;
+  padding: 3rem;
+}
+
+@media (max-width: 768px) {
+  .admin-sidebar { transform: translateX(-100%); }
+  .admin-main { margin-left: 0; }
+}
