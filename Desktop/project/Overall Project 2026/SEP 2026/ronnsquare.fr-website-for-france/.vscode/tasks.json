@@ -1,0 +1,74 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Build cPanel static distribution",
+			"type": "shell",
+			"command": "npm",
+			"args": [
+				"run",
+				"build"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Measure static distribution",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-NoProfile",
+				"-Command",
+				"$bytes=(Get-ChildItem -LiteralPath dist -Recurse -File | Measure-Object -Property Length -Sum).Sum; [PSCustomObject]@{Files=(Get-ChildItem -LiteralPath dist -Recurse -File).Count; SizeMB=[math]::Round($bytes/1MB,2); SizeGB=[math]::Round($bytes/1GB,3); Root=(Test-Path dist/index.html); English=(Test-Path dist/en/index.html)} | Format-List"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Rebuild static site assets",
+			"type": "shell",
+			"command": "npm",
+			"args": [
+				"run",
+				"build"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Verify hosted asset paths",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-NoProfile",
+				"-Command",
+				"npm run build; $paths=@('dist/wp-content/uploads/2026/05/fullimage-placeholder-768x512.jpg','dist/wp-content/themes/ronn_square_back/dist/assets/js/block-0-1-fullimage-anim-DwOgHX7k.js','dist/wp-content/themes/ronn_square_back/dist/assets/js/block-5-1-hero-contact-anim-B2LQj4fn.js'); $paths | ForEach-Object { [PSCustomObject]@{Path=$_; Exists=Test-Path -LiteralPath $_} } | Format-Table -AutoSize"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Verify hosted asset paths",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-NoProfile",
+				"-Command",
+				"npm run build; Write-Output ('image=' + (Test-Path 'dist/wp-content/uploads/2026/05/fullimage-placeholder-768x512.jpg')); Write-Output ('fullimage-js=' + (Test-Path 'dist/wp-content/themes/ronn_square_back/dist/assets/js/block-0-1-fullimage-anim-DwOgHX7k.js')); Write-Output ('contact-js=' + (Test-Path 'dist/wp-content/themes/ronn_square_back/dist/assets/js/block-5-1-hero-contact-anim-B2LQj4fn.js'))"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Build after missing asset fix",
+			"type": "shell",
+			"command": "npm",
+			"args": [
+				"run",
+				"build"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		}
+	]
+}

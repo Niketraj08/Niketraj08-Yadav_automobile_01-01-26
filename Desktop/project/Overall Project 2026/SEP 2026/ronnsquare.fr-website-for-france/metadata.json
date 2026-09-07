@@ -1,0 +1,8 @@
+{
+  "name": "Ronnsquare",
+  "description": "Workplace design and fit-out company in Paris: strategic consulting, architecture, design and turnkey office transformation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

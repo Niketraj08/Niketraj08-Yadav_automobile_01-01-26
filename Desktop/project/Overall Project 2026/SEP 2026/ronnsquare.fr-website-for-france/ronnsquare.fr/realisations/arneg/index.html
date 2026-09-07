@@ -1,0 +1,1367 @@
+<!doctype html>
+<html lang="fr-FR" style="background:#FFEAD4">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, interactive-widget=resizes-visual">
+    <script>history.scrollRestoration='manual';window.scrollTo(0,0);</script>
+    <script>
+    /* Once-per-session preloader gate — runs BEFORE first paint. The big
+       wordmark preloader plays only on the first fresh load of a session;
+       later fresh loads get the `rs-preloader-seen` class (read by
+       preloader-session.js) and a quick loader fade instead. */
+    document.documentElement.classList.add('rs-js'); /* JS present — gates the no-JS loader failsafe (see _transition.scss) */
+    /* First-load only: lets the hero image paint visible so Chrome can record it
+       as the LCP candidate. It loads eagerly at fetchpriority=high, and an image
+       that finishes loading while hidden is discarded by LCP forever, because a
+       later GSAP reveal is not a new paint and emits no entry. The opaque
+       #site-loader veil hides it from the user meanwhile (LCP does no occlusion
+       testing), and block-1-1-hero-anim's fromTo stamps the clipped start state
+       before the veil lifts. Barba drops this flag on the first leave: an
+       injected container is revealed BEFORE initPage runs and would flash. */
+    document.documentElement.classList.add('rs-first-load');
+    (function(){try{
+        if(sessionStorage.getItem('rsPreloaderSeen')){document.documentElement.classList.add('rs-preloader-seen');}
+        else{sessionStorage.setItem('rsPreloaderSeen','1');}
+    }catch(e){}})();
+    </script>
+    <style>
+    body{overflow-x:hidden}
+    </style>
+        <script>window.rsApi={url:'/wp-json/rs/v1/',nonce:'e217748ec8'};</script>
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+<link rel="alternate" hreflang="en" href="/en/realisations/arneg/" />
+<link rel="alternate" hreflang="fr" href="/realisations/arneg/" />
+<link rel="alternate" hreflang="x-default" href="/realisations/arneg/" />
+
+	<!-- This site is optimized with the Yoast SEO plugin v28.2 - https://yoast.com/product/yoast-seo-wordpress/ -->
+	<title>Arneg - Tremblay-en-France | Ronnsquare</title>
+	<meta name="description" content="Déménagement pour plus de flexibilité - Aménagement des espaces de travail - Arneg, Tremblay-en-France, 890m². Un projet signé Ronn Square." />
+	<link rel="canonical" href="/realisations/arneg/" />
+	<meta property="og:locale" content="fr_FR" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Arneg - Tremblay-en-France | Ronnsquare" />
+	<meta property="og:description" content="Déménagement pour plus de flexibilité" />
+	<meta property="og:url" content="/realisations/arneg/" />
+	<meta property="og:site_name" content="Ronnsquare" />
+	<meta property="article:modified_time" content="2026-07-20T09:16:09+00:00" />
+	<meta property="og:image" content="/wp-content/uploads/2026/06/Arneg-11_200KB.jpg" />
+	<meta property="og:image:width" content="2048" />
+	<meta property="og:image:height" content="1365" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Durée de lecture estimée" />
+	<meta name="twitter:data1" content="1 minute" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https:\/\/schema.org","@graph":[{"@type":"WebPage","@id":"https:\/\/ronnsquare.fr\/realisations\/arneg\/","url":"https:\/\/ronnsquare.fr\/realisations\/arneg\/","name":"Arneg - Tremblay-en-France | Ronnsquare","isPartOf":{"@id":"https:\/\/ronnsquare.fr\/#website"},"primaryImageOfPage":{"@id":"https:\/\/ronnsquare.fr\/realisations\/arneg\/#primaryimage"},"image":{"@id":"https:\/\/ronnsquare.fr\/realisations\/arneg\/#primaryimage"},"thumbnailUrl":"https:\/\/ronnsquare.fr\/wp-content\/uploads\/2026\/06\/Arneg-11_200KB.jpg","datePublished":"2026-06-10T07:40:37+00:00","dateModified":"2026-07-20T09:16:09+00:00","description":"Déménagement pour plus de flexibilité","breadcrumb":{"@id":"https:\/\/ronnsquare.fr\/realisations\/arneg\/#breadcrumb"},"inLanguage":"fr-FR","potentialAction":[{"@type":"ReadAction","target":["https:\/\/ronnsquare.fr\/realisations\/arneg\/"]}]},{"@type":"ImageObject","inLanguage":"fr-FR","@id":"https:\/\/ronnsquare.fr\/realisations\/arneg\/#primaryimage","url":"https:\/\/ronnsquare.fr\/wp-content\/uploads\/2026\/06\/Arneg-11_200KB.jpg","contentUrl":"https:\/\/ronnsquare.fr\/wp-content\/uploads\/2026\/06\/Arneg-11_200KB.jpg","width":2048,"height":1365,"caption":"Bureaux ARNEG aménagés par Ronnsquare"},{"@type":"BreadcrumbList","@id":"https:\/\/ronnsquare.fr\/realisations\/arneg\/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https:\/\/ronnsquare.fr\/"},{"@type":"ListItem","position":2,"name":"ARNEG"}]},{"@type":"WebSite","@id":"https:\/\/ronnsquare.fr\/#website","url":"https:\/\/ronnsquare.fr\/","name":"Ronnsquare","description":"Cabinet de conseil en architecture et aménagement d’espaces de travail","publisher":{"@id":"https:\/\/ronnsquare.fr\/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https:\/\/ronnsquare.fr\/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"fr-FR"},{"@type":"Organization","@id":"https:\/\/ronnsquare.fr\/#organization","name":"Ronnsquare","url":"https:\/\/ronnsquare.fr\/","logo":{"@type":"ImageObject","inLanguage":"fr-FR","@id":"https:\/\/ronnsquare.fr\/#\/schema\/logo\/image\/","url":"https:\/\/ronnsquare.fr\/wp-content\/uploads\/2026\/06\/ronn-square-og-default.jpg","contentUrl":"https:\/\/ronnsquare.fr\/wp-content\/uploads\/2026\/06\/ronn-square-og-default.jpg","width":1200,"height":630,"caption":"Ronnsquare"},"image":{"@id":"https:\/\/ronnsquare.fr\/#\/schema\/logo\/image\/"},"sameAs":["https:\/\/www.linkedin.com\/company\/ronnsquare\/"],"address":{"@type":"PostalAddress","addressCountry":"FR","streetAddress":"25 rue du 4 Septembre","postalCode":"75002","addressLocality":"Paris"},"telephone":"+33 1 83 68 00 04","email":"contact@ronnsquare.fr","legalName":"RONNSQUARE | ALPES DAUPHINE PROVENCE BUREAU","vatID":"FR29444996268","identifier":[{"@type":"PropertyValue","propertyID":"SIRET","value":"44499626800033"},{"@type":"PropertyValue","propertyID":"RCS","value":"RCS Romans 444 996 268"}]}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="icon" type="image/png" href="/wp-content/themes/ronn_square_back/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/wp-content/themes/ronn_square_back/favicon.svg">
+<link rel="shortcut icon" href="/wp-content/themes/ronn_square_back/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/wp-content/themes/ronn_square_back/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="Ronnsquare">
+
+<!-- Google Tag Manager — deferred, see src/js/modules/gtm.js -->
+<script>window.rsGtmId="GTM-KWB44P7L";</script>
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+
+<link rel='stylesheet' id='rs-main-css-0-css' href='/wp-content/themes/ronn_square_back/dist/assets/css/style-DyyA0dii.css' media='all' />
+<script id="wpml-cookie-js-extra">
+var wpml_cookies = {"wp-wpml_current_language":{"value":"fr","expires":1,"path":"/"}};
+var wpml_cookies = {"wp-wpml_current_language":{"value":"fr","expires":1,"path":"/"}};
+//# sourceURL=wpml-cookie-js-extra
+</script>
+<script data-wp-strategy="defer" defer id="wpml-cookie-js" src="/wp-content/plugins/sitepress-multilingual-cms/res/js/cookies/language-cookie.js?ver=496000"></script>
+<meta name="generator" content="WPML ver:4.9.6 stt:1,4;" />
+<style>.otgs-development-site-front-end{display:none!important}</style>
+
+
+
+<!-- BEGIN reCAPTCHA v3 -->
+<script>window.rsRecaptcha={"siteKey":"6LekvyAtAAAAAA5HqsboV9Ne1l0G0Kow97rKVdQO","src":"https:\/\/www.google.com\/recaptcha\/api.js?render=6LekvyAtAAAAAA5HqsboV9Ne1l0G0Kow97rKVdQO"};</script>
+<style id="rs-recaptcha-hide-badge">.grecaptcha-badge{visibility:hidden!important;opacity:0!important;pointer-events:none!important;}</style>
+<!-- END reCAPTCHA v3 -->
+</head>
+<body class="wp-singular realisation-template-default single single-realisation postid-1383 wp-theme-ronn_square_back">
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KWB44P7L"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div id="site-loader" style="position:fixed;inset:0;z-index:210;background:#DBB6FC;pointer-events:none;" aria-hidden="true"></div>
+
+<div class="brand-clone" data-brand-clone aria-hidden="true" style="visibility:hidden;opacity:0;">
+    <svg width="116" height="50" viewBox="0 -18 116.408 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g fill="currentColor">
+    <path data-wm="letter" data-glyph="s" d="M9.95438 32.2447L7.06265 31.6228C4.50739 31.077 4.15426 30.1291 4.15426 29.1863C4.15426 26.929 6.4991 26.5915 7.89704 26.5915C10.4346 26.5915 11.894 27.6842 12.0065 29.6676L12.0346 30.1551H15.7524L15.7483 29.6343C15.716 25.8685 12.5128 23.2383 7.9585 23.2383C5.70637 23.2383 3.80216 23.8008 2.45422 24.8664C1.09898 25.9373 0.3823 27.4311 0.3823 29.1863C0.3823 32.3041 2.31359 34.2739 6.12305 35.0396L9.22936 35.6625C11.4763 36.1021 12.3117 36.8386 12.3117 38.3803C12.3117 40.2897 11.1502 41.2585 8.24184 41.2585C5.33345 41.2585 3.85008 40.1084 3.70633 37.8386L3.67612 37.3542H0L0.0177087 37.8876C0.0843768 39.9324 0.782308 41.6189 2.13338 42.7627C3.55945 43.97 5.6147 44.5825 8.2408 44.5825C13.2128 44.5825 16.1128 42.1481 16.1128 38.3803C16.1128 34.0791 12.5982 32.8197 9.95334 32.2458L9.95438 32.2447Z"/>
+    <path data-wm="letter" data-glyph="r1" d="M3.77482 15.5488L11.8187 21.6624H17.9564L5.69049 12.5674H8.74368C10.9073 12.5674 12.6136 12.0779 13.8157 11.1132C15.1094 10.0736 15.7657 8.53715 15.7657 6.5444C15.7657 2.91724 13.075 0.664062 8.74368 0.664062H0.0351562V21.6624H3.77586V15.5488H3.77482ZM3.77482 3.98601H8.59055C11.5542 3.98601 11.9333 5.36833 11.9333 6.57252C11.9333 8.4059 10.9333 9.1882 8.59055 9.1882H3.77482V3.98601Z"/>
+    <path data-wm="letter" data-glyph="u" d="M55.2703 36.7478C55.2703 39.7541 53.713 41.2156 50.5098 41.2156C47.3066 41.2156 45.8118 39.7541 45.8118 36.7478V23.2559H41.9492V36.8051C41.9492 39.2177 42.7305 41.2083 44.2076 42.5604C45.7035 43.9292 47.8243 44.624 50.5098 44.624C53.1953 44.624 55.3776 43.9303 56.8777 42.5615C58.3527 41.2146 59.1329 39.225 59.1329 36.8051V23.2559H55.2703V36.7478Z"/>
+    <path data-wm="letter" data-glyph="a" d="M67.6752 23.2656L60.6407 44.264H64.7189L66.3752 39.1035H74.6316L76.2879 44.264H80.364L73.3941 23.2656H67.6752ZM67.4439 35.7815L70.5023 26.2105L73.5607 35.7815H67.4429H67.4439Z"/>
+    <path data-wm="letter" data-glyph="r2" d="M91.6734 35.169C93.8369 35.169 95.5432 34.6794 96.7453 33.7148C98.0391 32.6752 98.6954 31.1387 98.6954 29.146C98.6954 25.5188 96.0047 23.2656 91.6734 23.2656H82.9648V44.264H86.7055V38.1503L94.7495 44.264H100.887L88.6202 35.17H91.6734V35.169ZM86.7045 26.5876H91.5202C94.4838 26.5876 94.863 27.9699 94.863 29.1741C94.863 31.0075 93.863 31.7887 91.5202 31.7887H86.7045V26.5865V26.5876Z"/>
+    <path data-wm="letter" data-glyph="e" d="M116.408 26.6449V23.2656H102.18V44.264H116.408V40.8837H105.981V35.1409H115.457V31.7617H105.981V26.6449H116.408Z"/>
+    <path data-wm="letter" data-glyph="n1" d="M45.7121 4.46935L52.933 21.6624H59.1311V0.664062H55.4112V18.0342L48.0059 0.664062H41.9922V21.6624H45.7121V4.46935Z"/>
+    <path data-wm="letter" data-glyph="n2" d="M66.436 4.46935L73.6966 21.6624H79.929V0.664062H76.1894V18.0342L68.7423 0.664062H62.6953V21.6624H66.436V4.46935Z"/>
+    <path data-wm="shape" data-shape="circle" d="M28.589 44.5921C22.6702 44.5921 17.8555 39.7775 17.8555 33.8586C17.8555 27.9397 22.6702 23.125 28.589 23.125C34.5079 23.125 39.3226 27.9397 39.3226 33.8586C39.3226 39.7775 34.5079 44.5921 28.589 44.5921ZM28.589 40.9296C32.4881 40.9296 35.66 37.7576 35.66 33.8586C35.66 29.9595 32.4881 26.7876 28.589 26.7876C24.69 26.7876 21.518 29.9595 21.518 33.8586C21.518 37.7576 24.69 40.9296 28.589 40.9296Z"/>
+    <path data-wm="shape" data-shape="diamond" d="M28.5878 17.8764L34.8921 11.5721L28.5878 5.26782L22.2834 11.5721L28.5878 17.8764ZM28.5878 23.1442L17.0156 11.5721L28.5878 0L40.1599 11.5721L28.5878 23.1442Z"/>
+    <path data-wm="shape" data-shape="triangle" d="M34.0054 50.0008L28.5887 44.584L23.1719 50.0008H34.0054Z"/>
+  </g>
+</svg>
+</div>
+
+<div class="site-bg" aria-hidden="true">
+    <div class="site-bg__base"></div>
+</div>
+
+<!-- Curved-wipe page transition overlay -->
+<div class="transition" data-transition-wrap aria-hidden="true">
+  <div class="transition__panel" data-transition-panel>
+    <div class="transition__panel-top" data-transition-panel-top>
+      <div class="transition__panel-circle"></div>
+    </div>
+    <div class="transition__panel-bottom" data-transition-panel-bottom>
+      <div class="transition__panel-circle"></div>
+    </div>
+  </div>
+  <div class="transition__logo" data-transition-logo>
+    <svg width="116" height="50" viewBox="0 0 116.408 50.0008" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g fill="currentColor">
+    <path data-wm="letter" data-glyph="s" d="M9.95438 32.2447L7.06265 31.6228C4.50739 31.077 4.15426 30.1291 4.15426 29.1863C4.15426 26.929 6.4991 26.5915 7.89704 26.5915C10.4346 26.5915 11.894 27.6842 12.0065 29.6676L12.0346 30.1551H15.7524L15.7483 29.6343C15.716 25.8685 12.5128 23.2383 7.9585 23.2383C5.70637 23.2383 3.80216 23.8008 2.45422 24.8664C1.09898 25.9373 0.3823 27.4311 0.3823 29.1863C0.3823 32.3041 2.31359 34.2739 6.12305 35.0396L9.22936 35.6625C11.4763 36.1021 12.3117 36.8386 12.3117 38.3803C12.3117 40.2897 11.1502 41.2585 8.24184 41.2585C5.33345 41.2585 3.85008 40.1084 3.70633 37.8386L3.67612 37.3542H0L0.0177087 37.8876C0.0843768 39.9324 0.782308 41.6189 2.13338 42.7627C3.55945 43.97 5.6147 44.5825 8.2408 44.5825C13.2128 44.5825 16.1128 42.1481 16.1128 38.3803C16.1128 34.0791 12.5982 32.8197 9.95334 32.2458L9.95438 32.2447Z"/>
+    <path data-wm="letter" data-glyph="r1" d="M3.77482 15.5488L11.8187 21.6624H17.9564L5.69049 12.5674H8.74368C10.9073 12.5674 12.6136 12.0779 13.8157 11.1132C15.1094 10.0736 15.7657 8.53715 15.7657 6.5444C15.7657 2.91724 13.075 0.664062 8.74368 0.664062H0.0351562V21.6624H3.77586V15.5488H3.77482ZM3.77482 3.98601H8.59055C11.5542 3.98601 11.9333 5.36833 11.9333 6.57252C11.9333 8.4059 10.9333 9.1882 8.59055 9.1882H3.77482V3.98601Z"/>
+    <path data-wm="letter" data-glyph="u" d="M55.2703 36.7478C55.2703 39.7541 53.713 41.2156 50.5098 41.2156C47.3066 41.2156 45.8118 39.7541 45.8118 36.7478V23.2559H41.9492V36.8051C41.9492 39.2177 42.7305 41.2083 44.2076 42.5604C45.7035 43.9292 47.8243 44.624 50.5098 44.624C53.1953 44.624 55.3776 43.9303 56.8777 42.5615C58.3527 41.2146 59.1329 39.225 59.1329 36.8051V23.2559H55.2703V36.7478Z"/>
+    <path data-wm="letter" data-glyph="a" d="M67.6752 23.2656L60.6407 44.264H64.7189L66.3752 39.1035H74.6316L76.2879 44.264H80.364L73.3941 23.2656H67.6752ZM67.4439 35.7815L70.5023 26.2105L73.5607 35.7815H67.4429H67.4439Z"/>
+    <path data-wm="letter" data-glyph="r2" d="M91.6734 35.169C93.8369 35.169 95.5432 34.6794 96.7453 33.7148C98.0391 32.6752 98.6954 31.1387 98.6954 29.146C98.6954 25.5188 96.0047 23.2656 91.6734 23.2656H82.9648V44.264H86.7055V38.1503L94.7495 44.264H100.887L88.6202 35.17H91.6734V35.169ZM86.7045 26.5876H91.5202C94.4838 26.5876 94.863 27.9699 94.863 29.1741C94.863 31.0075 93.863 31.7887 91.5202 31.7887H86.7045V26.5865V26.5876Z"/>
+    <path data-wm="letter" data-glyph="e" d="M116.408 26.6449V23.2656H102.18V44.264H116.408V40.8837H105.981V35.1409H115.457V31.7617H105.981V26.6449H116.408Z"/>
+    <path data-wm="letter" data-glyph="n1" d="M45.7121 4.46935L52.933 21.6624H59.1311V0.664062H55.4112V18.0342L48.0059 0.664062H41.9922V21.6624H45.7121V4.46935Z"/>
+    <path data-wm="letter" data-glyph="n2" d="M66.436 4.46935L73.6966 21.6624H79.929V0.664062H76.1894V18.0342L68.7423 0.664062H62.6953V21.6624H66.436V4.46935Z"/>
+    <path data-wm="shape" data-shape="circle" d="M28.589 44.5921C22.6702 44.5921 17.8555 39.7775 17.8555 33.8586C17.8555 27.9397 22.6702 23.125 28.589 23.125C34.5079 23.125 39.3226 27.9397 39.3226 33.8586C39.3226 39.7775 34.5079 44.5921 28.589 44.5921ZM28.589 40.9296C32.4881 40.9296 35.66 37.7576 35.66 33.8586C35.66 29.9595 32.4881 26.7876 28.589 26.7876C24.69 26.7876 21.518 29.9595 21.518 33.8586C21.518 37.7576 24.69 40.9296 28.589 40.9296Z"/>
+    <path data-wm="shape" data-shape="diamond" d="M28.5878 17.8764L34.8921 11.5721L28.5878 5.26782L22.2834 11.5721L28.5878 17.8764ZM28.5878 23.1442L17.0156 11.5721L28.5878 0L40.1599 11.5721L28.5878 23.1442Z"/>
+    <path data-wm="shape" data-shape="triangle" d="M34.0054 50.0008L28.5887 44.584L23.1719 50.0008H34.0054Z"/>
+  </g>
+</svg>
+  </div>
+</div>
+
+<header class="header-ronn header-ronn--light" data-header-ronn>
+
+  <!-- Skip link (first focusable element; target #main-content exists on every template) -->
+  <a class="skip-link" href="#main-content">Aller au contenu</a>
+
+  <!-- CTA Banner Bar -->
+  <div class="header-ronn__cta-bar">
+    <p class="header-ronn__cta-text">
+      ADP Group devient Ronnsquare !    </p>
+    <a class="btn header-ronn__cta-btn" href="/adn-equipe/" data-button-animate-chars>
+      <span class="btn__bg" aria-hidden="true"></span>
+      <span class="btn__label">Découvrez</span>
+    </a>
+  </div>
+
+  <!-- Main Navigation Bar -->
+  <div class="header-ronn__main">
+
+    <!-- Logo -->
+    <a class="header-ronn__logo" href="/" aria-label="Ronnsquare - Accueil">
+      <svg width="116" height="50" viewBox="0 0 116.408 50.0008" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g fill="currentColor">
+    <path data-wm="letter" data-glyph="s" d="M9.95438 32.2447L7.06265 31.6228C4.50739 31.077 4.15426 30.1291 4.15426 29.1863C4.15426 26.929 6.4991 26.5915 7.89704 26.5915C10.4346 26.5915 11.894 27.6842 12.0065 29.6676L12.0346 30.1551H15.7524L15.7483 29.6343C15.716 25.8685 12.5128 23.2383 7.9585 23.2383C5.70637 23.2383 3.80216 23.8008 2.45422 24.8664C1.09898 25.9373 0.3823 27.4311 0.3823 29.1863C0.3823 32.3041 2.31359 34.2739 6.12305 35.0396L9.22936 35.6625C11.4763 36.1021 12.3117 36.8386 12.3117 38.3803C12.3117 40.2897 11.1502 41.2585 8.24184 41.2585C5.33345 41.2585 3.85008 40.1084 3.70633 37.8386L3.67612 37.3542H0L0.0177087 37.8876C0.0843768 39.9324 0.782308 41.6189 2.13338 42.7627C3.55945 43.97 5.6147 44.5825 8.2408 44.5825C13.2128 44.5825 16.1128 42.1481 16.1128 38.3803C16.1128 34.0791 12.5982 32.8197 9.95334 32.2458L9.95438 32.2447Z"/>
+    <path data-wm="letter" data-glyph="r1" d="M3.77482 15.5488L11.8187 21.6624H17.9564L5.69049 12.5674H8.74368C10.9073 12.5674 12.6136 12.0779 13.8157 11.1132C15.1094 10.0736 15.7657 8.53715 15.7657 6.5444C15.7657 2.91724 13.075 0.664062 8.74368 0.664062H0.0351562V21.6624H3.77586V15.5488H3.77482ZM3.77482 3.98601H8.59055C11.5542 3.98601 11.9333 5.36833 11.9333 6.57252C11.9333 8.4059 10.9333 9.1882 8.59055 9.1882H3.77482V3.98601Z"/>
+    <path data-wm="letter" data-glyph="u" d="M55.2703 36.7478C55.2703 39.7541 53.713 41.2156 50.5098 41.2156C47.3066 41.2156 45.8118 39.7541 45.8118 36.7478V23.2559H41.9492V36.8051C41.9492 39.2177 42.7305 41.2083 44.2076 42.5604C45.7035 43.9292 47.8243 44.624 50.5098 44.624C53.1953 44.624 55.3776 43.9303 56.8777 42.5615C58.3527 41.2146 59.1329 39.225 59.1329 36.8051V23.2559H55.2703V36.7478Z"/>
+    <path data-wm="letter" data-glyph="a" d="M67.6752 23.2656L60.6407 44.264H64.7189L66.3752 39.1035H74.6316L76.2879 44.264H80.364L73.3941 23.2656H67.6752ZM67.4439 35.7815L70.5023 26.2105L73.5607 35.7815H67.4429H67.4439Z"/>
+    <path data-wm="letter" data-glyph="r2" d="M91.6734 35.169C93.8369 35.169 95.5432 34.6794 96.7453 33.7148C98.0391 32.6752 98.6954 31.1387 98.6954 29.146C98.6954 25.5188 96.0047 23.2656 91.6734 23.2656H82.9648V44.264H86.7055V38.1503L94.7495 44.264H100.887L88.6202 35.17H91.6734V35.169ZM86.7045 26.5876H91.5202C94.4838 26.5876 94.863 27.9699 94.863 29.1741C94.863 31.0075 93.863 31.7887 91.5202 31.7887H86.7045V26.5865V26.5876Z"/>
+    <path data-wm="letter" data-glyph="e" d="M116.408 26.6449V23.2656H102.18V44.264H116.408V40.8837H105.981V35.1409H115.457V31.7617H105.981V26.6449H116.408Z"/>
+    <path data-wm="letter" data-glyph="n1" d="M45.7121 4.46935L52.933 21.6624H59.1311V0.664062H55.4112V18.0342L48.0059 0.664062H41.9922V21.6624H45.7121V4.46935Z"/>
+    <path data-wm="letter" data-glyph="n2" d="M66.436 4.46935L73.6966 21.6624H79.929V0.664062H76.1894V18.0342L68.7423 0.664062H62.6953V21.6624H66.436V4.46935Z"/>
+    <path data-wm="shape" data-shape="circle" d="M28.589 44.5921C22.6702 44.5921 17.8555 39.7775 17.8555 33.8586C17.8555 27.9397 22.6702 23.125 28.589 23.125C34.5079 23.125 39.3226 27.9397 39.3226 33.8586C39.3226 39.7775 34.5079 44.5921 28.589 44.5921ZM28.589 40.9296C32.4881 40.9296 35.66 37.7576 35.66 33.8586C35.66 29.9595 32.4881 26.7876 28.589 26.7876C24.69 26.7876 21.518 29.9595 21.518 33.8586C21.518 37.7576 24.69 40.9296 28.589 40.9296Z"/>
+    <path data-wm="shape" data-shape="diamond" d="M28.5878 17.8764L34.8921 11.5721L28.5878 5.26782L22.2834 11.5721L28.5878 17.8764ZM28.5878 23.1442L17.0156 11.5721L28.5878 0L40.1599 11.5721L28.5878 23.1442Z"/>
+    <path data-wm="shape" data-shape="triangle" d="M34.0054 50.0008L28.5887 44.584L23.1719 50.0008H34.0054Z"/>
+  </g>
+</svg>
+    </a>
+
+    <!-- Desktop Nav -->
+    <nav class="header-ronn__nav" aria-label="Navigation principale">
+      <ul id="menu-main-menu" class="header-ronn__nav-list"><li class="header-ronn__nav-item"><a href="/adn-equipe/" class="header-ronn__nav-link">ADN &amp; Equipe</a></li><li class="header-ronn__nav-item"><a href="/realisations/" class="header-ronn__nav-link">Réalisations</a></li><li class="header-ronn__nav-item header-ronn__nav-item--has-sub"><a href="/preoccupations/" class="header-ronn__nav-link">Préoccupations</a><button class="header-ronn__chevron-toggle" type="button" aria-expanded="false" aria-haspopup="true" aria-label="Ouvrir le sous-menu Préoccupations"><svg width="12" height="6" viewBox="0 0 12 6" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+  <path d="M1 1L6 5L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</button><ul class="header-ronn__dropdown" role="menu"><li role="none"><a href="/preoccupations/fin-de-bail/" class="header-ronn__dropdown-link" role="menuitem">Fin de bail: rester ou partir?</a></li><li role="none"><a href="/preoccupations/projets-complexes/" class="header-ronn__dropdown-link" role="menuitem">Projets complexes</a></li><li role="none"><a href="/preoccupations/attirer-et-retenir-les-talents/" class="header-ronn__dropdown-link" role="menuitem">Attirer et retenir les talents</a></li><li role="none"><a href="/preoccupations/faire-revenir-les-equipes/" class="header-ronn__dropdown-link" role="menuitem">Faire revenir les équipes</a></li></ul></li><li class="header-ronn__nav-item header-ronn__nav-item--has-sub"><a href="/expertises/" class="header-ronn__nav-link">Nos expertises</a><button class="header-ronn__chevron-toggle" type="button" aria-expanded="false" aria-haspopup="true" aria-label="Ouvrir le sous-menu Nos expertises"><svg width="12" height="6" viewBox="0 0 12 6" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+  <path d="M1 1L6 5L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</button><ul class="header-ronn__dropdown" role="menu"><li role="none"><a href="/expertises/conseil-strategique/" class="header-ronn__dropdown-link" role="menuitem">Conseil et stratégie</a></li><li role="none"><a href="/expertises/durabilite-ecologie/" class="header-ronn__dropdown-link" role="menuitem">Durabilité &#038; Ecologie</a></li><li role="none"><a href="/expertises/technique-realisation/" class="header-ronn__dropdown-link" role="menuitem">Technique &#038; Réalisation</a></li><li role="none"><a href="/expertises/architecture-design/" class="header-ronn__dropdown-link" role="menuitem">Architecture &#038; Design</a></li></ul></li></ul>    </nav>
+
+    <!-- Desktop Action Buttons -->
+    <div class="header-ronn__actions">
+      
+      <a href="/contact/" class="btn header-ronn__btn header-ronn__btn--solid" data-button-animate-chars>
+        <span class="btn__bg" aria-hidden="true"></span>
+        <span class="btn__label">Nous contacter</span>
+      </a>
+      <div class="header-ronn__lang-wrap" data-header-ronn-lang>
+        <button class="header-ronn__lang" type="button" aria-expanded="false" aria-haspopup="true" aria-label="Changer de langue">
+          <span>FR</span>
+          <span class="header-ronn__chevron"><svg width="12" height="6" viewBox="0 0 12 6" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+  <path d="M1 1L6 5L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</span>
+        </button>
+        <ul class="header-ronn__lang-dropdown" role="menu">
+                    <li role="none"><a href="/en/realisations/arneg/" class="header-ronn__lang-option" role="menuitem" data-lang="en" data-barba-prevent>English</a></li>
+                    <li role="none"><a href="/realisations/arneg/" class="header-ronn__lang-option is-active" role="menuitem" data-lang="fr" data-barba-prevent>Français</a></li>
+                  </ul>
+      </div>
+    </div>
+
+    <!-- Mobile: CTA button + hamburger -->
+    
+    <button
+      class="header-ronn__hamburger"
+      type="button"
+      aria-label="Ouvrir le menu"
+      aria-expanded="false"
+      aria-controls="header-ronn-menu"
+      data-header-ronn-toggle
+    >
+      <svg class="header-ronn__hamburger-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <line class="header-ronn__hamburger-line header-ronn__hamburger-line--top" x1="2" y1="8" x2="22" y2="8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <line class="header-ronn__hamburger-line header-ronn__hamburger-line--bottom" x1="2" y1="16" x2="22" y2="16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Breadcrumb (shell always rendered so JS can target it during Barba transitions) -->
+    <nav class="header-ronn__breadcrumb" aria-label="Fil d&#039;Ariane">
+    <div class="header-ronn__breadcrumb-track">
+        <a href="/" class="header-ronn__breadcrumb-link header-ronn__breadcrumb-link--inactive">Accueil</a>
+            <span class="header-ronn__breadcrumb-sep">/</span>
+            <a href="/realisations/" class="header-ronn__breadcrumb-link header-ronn__breadcrumb-link--inactive">Réalisations</a>
+            <span class="header-ronn__breadcrumb-sep">/</span>
+            <span class="header-ronn__breadcrumb-link" aria-current="page">ARNEG</span>
+            </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div
+    class="header-ronn__menu"
+    id="header-ronn-menu"
+    data-header-ronn-menu
+    aria-hidden="true"
+    role="dialog"
+    aria-label="Menu de navigation"
+    tabindex="-1"
+  >
+    <div class="header-ronn__menu-body">
+      <!-- Contact CTA — first item in the panel (client: button just after header) -->
+      <a href="/contact/" class="btn header-ronn__btn header-ronn__btn--solid header-ronn__btn--full header-ronn__btn--menu-top">
+        <span class="btn__bg" aria-hidden="true"></span>
+        <span class="btn__label">Nous contacter</span>
+      </a>
+
+      <a href="/adn-equipe/" class="header-ronn__menu-link">ADN &amp; Equipe</a><a href="/realisations/" class="header-ronn__menu-link">Réalisations</a><div class="header-ronn__menu-group" data-header-ronn-accordion><div class="header-ronn__menu-link header-ronn__menu-link--parent"><a href="/preoccupations/" class="header-ronn__menu-parent-link">Préoccupations</a><button class="header-ronn__chevron-toggle" type="button" aria-expanded="false" aria-label="Ouvrir le sous-menu Préoccupations"><svg width="12" height="6" viewBox="0 0 12 6" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+  <path d="M1 1L6 5L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</button></div><div class="header-ronn__menu-sub" hidden><div class="header-ronn__menu-sub-inner"><a href="/preoccupations/fin-de-bail/" class="header-ronn__menu-sub-link">Fin de bail: rester ou partir?</a><a href="/preoccupations/projets-complexes/" class="header-ronn__menu-sub-link">Projets complexes</a><a href="/preoccupations/attirer-et-retenir-les-talents/" class="header-ronn__menu-sub-link">Attirer et retenir les talents</a><a href="/preoccupations/faire-revenir-les-equipes/" class="header-ronn__menu-sub-link">Faire revenir les équipes</a></div></div></div><div class="header-ronn__menu-group" data-header-ronn-accordion><div class="header-ronn__menu-link header-ronn__menu-link--parent"><a href="/expertises/" class="header-ronn__menu-parent-link">Nos expertises</a><button class="header-ronn__chevron-toggle" type="button" aria-expanded="false" aria-label="Ouvrir le sous-menu Nos expertises"><svg width="12" height="6" viewBox="0 0 12 6" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+  <path d="M1 1L6 5L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</button></div><div class="header-ronn__menu-sub" hidden><div class="header-ronn__menu-sub-inner"><a href="/expertises/conseil-strategique/" class="header-ronn__menu-sub-link">Conseil et stratégie</a><a href="/expertises/durabilite-ecologie/" class="header-ronn__menu-sub-link">Durabilité &#038; Ecologie</a><a href="/expertises/technique-realisation/" class="header-ronn__menu-sub-link">Technique &#038; Réalisation</a><a href="/expertises/architecture-design/" class="header-ronn__menu-sub-link">Architecture &#038; Design</a></div></div></div>
+      <!-- Extra links (client: FAQ / Témoignages clients / Contacts before Langue) -->
+            <a href="/faq/" class="header-ronn__menu-link">FAQ</a>
+            <a href="/temoignages/" class="header-ronn__menu-link">Témoignages clients</a>
+            <a href="/contact/" class="header-ronn__menu-link">Contacts</a>
+      
+      <!-- Language row -->
+      <div class="header-ronn__menu-group" data-header-ronn-accordion>
+        <button class="header-ronn__menu-link header-ronn__menu-link--parent header-ronn__menu-link--lang" type="button" aria-expanded="false">
+          <span>Langue</span>
+          <span class="header-ronn__menu-lang-right">
+            <span>fr</span>
+          </span>
+          <span class="header-ronn__chevron"><svg width="12" height="6" viewBox="0 0 12 6" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+  <path d="M1 1L6 5L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</span>
+        </button>
+        <div class="header-ronn__menu-sub" hidden>
+          <div class="header-ronn__menu-sub-inner">
+                    <a href="/en/realisations/arneg/" class="header-ronn__menu-sub-link" data-lang="en" data-barba-prevent>English</a>
+                    <a href="/realisations/arneg/" class="header-ronn__menu-sub-link is-active" data-lang="fr" data-barba-prevent>Français</a>
+                    </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menu Footer -->
+    <div class="header-ronn__menu-footer">
+      <div class="header-ronn__menu-cta">
+        <p class="header-ronn__menu-cta-text">
+          ADP Group devient Ronnsquare !        </p>
+        <a href="/adn-equipe/" class="btn header-ronn__menu-cta-btn" data-button-animate-chars>
+          <span class="btn__bg" aria-hidden="true"></span>
+          <span class="btn__label">Découvrez</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div data-barba="wrapper">
+<main id="main-content" class="site-main" role="main" data-barba="container" data-barba-namespace="realisation" data-post-id="1383" data-initial-bg="sable" data-nav-theme="light" data-nav-theme-scrolled="dark-sable" data-lang-urls="{&quot;en&quot;:&quot;https:\/\/ronnsquare.fr\/en\/realisations\/arneg\/&quot;,&quot;fr&quot;:&quot;https:\/\/ronnsquare.fr\/realisations\/arneg\/&quot;}" data-has-breadcrumb data-breadcrumbs="[{&quot;label&quot;:&quot;Accueil&quot;,&quot;url&quot;:&quot;https:\/\/ronnsquare.fr\/&quot;},{&quot;label&quot;:&quot;R\u00e9alisations&quot;,&quot;url&quot;:&quot;https:\/\/ronnsquare.fr\/realisations\/&quot;},{&quot;label&quot;:&quot;ARNEG&quot;}]">
+
+  <!-- Block 7-1: Hero with ticker -->
+  <section class="block-7-1-hero" data-block="block-7-1-hero" data-entrance="above-fold" aria-label="Arneg">
+    <div class="block-7-1-hero__slider">
+      <div class="block-7-1-hero__ticker anim-hidden" data-anim="ticker">
+        <div class="block-7-1-hero__track" data-anim="track">
+                    <div
+            class="block-7-1-hero__item"
+            role="button"
+            tabindex="0"
+            data-lightbox-full="/wp-content/uploads/2026/06/Arneg-4_200KB.jpg"
+            data-lightbox-alt="Aménagement des espaces de travail ARNEG par Ronnsquare"
+            aria-label="Agrandir l&#039;image 1"
+          >
+            <div class="block-7-1-hero__item-img">
+              <img src="/wp-content/uploads/2026/06/Arneg-4_200KB-1024x683.jpg" alt="Aménagement des espaces de travail ARNEG par Ronnsquare" loading="eager" />
+            </div>
+          </div>
+                    <div
+            class="block-7-1-hero__item"
+            role="button"
+            tabindex="0"
+            data-lightbox-full="/wp-content/uploads/2026/06/Arneg-11_200KB.jpg"
+            data-lightbox-alt="Bureaux ARNEG aménagés par Ronnsquare"
+            aria-label="Agrandir l&#039;image 2"
+          >
+            <div class="block-7-1-hero__item-img">
+              <img src="/wp-content/uploads/2026/06/Arneg-11_200KB-1024x683.jpg" alt="Bureaux ARNEG aménagés par Ronnsquare" loading="lazy" />
+            </div>
+          </div>
+                    <div
+            class="block-7-1-hero__item"
+            role="button"
+            tabindex="0"
+            data-lightbox-full="/wp-content/uploads/2026/06/Arneg-18_under200KB.jpg"
+            data-lightbox-alt="Espace de travail ARNEG réalisé par Ronnsquare"
+            aria-label="Agrandir l&#039;image 3"
+          >
+            <div class="block-7-1-hero__item-img">
+              <img src="/wp-content/uploads/2026/06/Arneg-18_under200KB-1024x683.jpg" alt="Espace de travail ARNEG réalisé par Ronnsquare" loading="lazy" />
+            </div>
+          </div>
+                    <div
+            class="block-7-1-hero__item"
+            role="button"
+            tabindex="0"
+            data-lightbox-full="/wp-content/uploads/2026/06/Arneg-19_200KB.jpg"
+            data-lightbox-alt="Aménagement intérieur des bureaux ARNEG par Ronnsquare"
+            aria-label="Agrandir l&#039;image 4"
+          >
+            <div class="block-7-1-hero__item-img">
+              <img src="/wp-content/uploads/2026/06/Arneg-19_200KB-1024x683.jpg" alt="Aménagement intérieur des bureaux ARNEG par Ronnsquare" loading="lazy" />
+            </div>
+          </div>
+                    <!-- Duplicate set for seamless loop — clickable for the lightbox too
+               (JS dedupes the cycle by URL), but hidden from the a11y tree -->
+                    <div
+            class="block-7-1-hero__item"
+            aria-hidden="true"
+            data-lightbox-full="/wp-content/uploads/2026/06/Arneg-4_200KB.jpg"
+            data-lightbox-alt="Aménagement des espaces de travail ARNEG par Ronnsquare"
+          >
+            <div class="block-7-1-hero__item-img">
+              <img src="/wp-content/uploads/2026/06/Arneg-4_200KB-1024x683.jpg" alt="" loading="lazy" />
+            </div>
+          </div>
+                    <div
+            class="block-7-1-hero__item"
+            aria-hidden="true"
+            data-lightbox-full="/wp-content/uploads/2026/06/Arneg-11_200KB.jpg"
+            data-lightbox-alt="Bureaux ARNEG aménagés par Ronnsquare"
+          >
+            <div class="block-7-1-hero__item-img">
+              <img src="/wp-content/uploads/2026/06/Arneg-11_200KB-1024x683.jpg" alt="" loading="lazy" />
+            </div>
+          </div>
+                    <div
+            class="block-7-1-hero__item"
+            aria-hidden="true"
+            data-lightbox-full="/wp-content/uploads/2026/06/Arneg-18_under200KB.jpg"
+            data-lightbox-alt="Espace de travail ARNEG réalisé par Ronnsquare"
+          >
+            <div class="block-7-1-hero__item-img">
+              <img src="/wp-content/uploads/2026/06/Arneg-18_under200KB-1024x683.jpg" alt="" loading="lazy" />
+            </div>
+          </div>
+                    <div
+            class="block-7-1-hero__item"
+            aria-hidden="true"
+            data-lightbox-full="/wp-content/uploads/2026/06/Arneg-19_200KB.jpg"
+            data-lightbox-alt="Aménagement intérieur des bureaux ARNEG par Ronnsquare"
+          >
+            <div class="block-7-1-hero__item-img">
+              <img src="/wp-content/uploads/2026/06/Arneg-19_200KB-1024x683.jpg" alt="" loading="lazy" />
+            </div>
+          </div>
+                  </div>
+      </div>
+
+      <button class="block-7-1-hero__arrow block-7-1-hero__arrow--prev anim-hidden" data-anim="arrow-prev" aria-label="Image précédente">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+  <path d="M19 12H5M5 12L12 5M5 12L12 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>      </button>
+      <button class="block-7-1-hero__arrow block-7-1-hero__arrow--next anim-hidden" data-anim="arrow-next" aria-label="Image suivante">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+  <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+      </button>
+    </div>
+    <div class="block-7-1-hero__text">
+      <h1 class="block-7-1-hero__title anim-hidden" data-anim="title">Arneg</h1>
+      <p class="block-7-1-hero__subtitle anim-hidden" data-anim="subtitle">Déménagement pour plus de flexibilité</p>
+    </div>
+    <div class="block-7-1-hero__theses-wrapper">
+      <div class="block-7-1-hero__theses anim-hidden" data-anim="theses">
+                <div class="block-7-1-hero__thesis anim-hidden" data-anim="thesis">
+          <span class="block-7-1-hero__thesis-label">Secteur</span>
+          <span class="block-7-1-hero__thesis-value">Industrie</span>
+        </div>
+                <div class="block-7-1-hero__thesis anim-hidden" data-anim="thesis">
+          <span class="block-7-1-hero__thesis-label">Localisation</span>
+          <span class="block-7-1-hero__thesis-value">Tremblay-en-France</span>
+        </div>
+                <div class="block-7-1-hero__thesis anim-hidden" data-anim="thesis">
+          <span class="block-7-1-hero__thesis-label">Durée</span>
+          <span class="block-7-1-hero__thesis-value">2 mois</span>
+        </div>
+                <div class="block-7-1-hero__thesis anim-hidden" data-anim="thesis">
+          <span class="block-7-1-hero__thesis-label">Expertises</span>
+          <span class="block-7-1-hero__thesis-value">Conseil · Conception · Réalisation</span>
+        </div>
+              </div>
+    </div>
+  </section>
+
+  <section class="block-7-2-seo block-7-2-seo--no-pb" data-block="block-7-2-seo" data-bg="sable">
+  <div class="block-7-2-seo__container">
+    <div class="block-7-2-seo__media anim-hidden" data-anim="media">
+      <div class="block-7-2-seo__media-inner" data-anim-img-inner>
+                <img
+          src="/wp-content/uploads/2026/06/Arneg-20_200KB.jpg"
+          alt="Bureaux ARNEG conçus et aménagés par Ronnsquare"
+          class="block-7-2-seo__img"
+          role="button"
+          tabindex="0"
+          data-lightbox-full="/wp-content/uploads/2026/06/Arneg-20_200KB.jpg"
+          data-lightbox-alt="Bureaux ARNEG conçus et aménagés par Ronnsquare"
+          aria-label="Agrandir l&#039;image"
+        />
+              </div>
+    </div>
+    <div class="block-7-2-seo__content">
+      <h2 class="block-7-2-seo__title anim-hidden" data-anim="title">Un bâtiment neuf plus spacieux et une nouvelle organisation interne</h2>
+      <div class="block-7-2-seo__body anim-hidden" data-anim="body"><p><span style="font-weight: 400;">Face à l&rsquo;étroitesse de ses anciens locaux et à la croissance continue de ses effectifs, Arneg a fait le choix d&rsquo;un déménagement vers un bâtiment neuf et plus spacieux, conçu pour offrir davantage de flexibilité et de capacité d&rsquo;accueil.</span></p>
+<p><span style="font-weight: 400;">Nous avons accompagné Arneg dans l&rsquo;intégralité du projet : conception des espaces, travaux de second œuvre et installation du mobilier, sur les deux niveaux de la nouvelle structure.</span></p>
+<p><span style="font-weight: 400;">Le bien-être des collaborateurs a été au cœur des priorités. Espaces de concentration et espaces conviviaux ont été répartis entre les plateaux pour limiter les nuisances et favoriser la productivité. Des postes hybrides et polyvalents ont également été intégrés pour répondre aux besoins des télétravailleurs, visiteurs et équipes en collaboration — faisant de ces nouveaux bureaux un lieu où il fait bon travailler au quotidien.</span></p>
+</div>
+    </div>
+  </div>
+  </section>
+<section class="block-1-8-projects block-7-4-gallery block-7-4-gallery--grid-2" data-block="block-7-4-gallery">
+  <div class="block-1-8-projects__inner">
+        <div class="block-1-8-projects__grid">
+            <figure
+        class="block-1-8-projects__card anim-hidden"
+        data-anim="card"
+        role="button"
+        tabindex="0"
+        data-lightbox-full="/wp-content/uploads/2026/06/Arneg-21_200KB.jpg"
+        data-lightbox-alt="Espaces de travail ARNEG signés Ronnsquare"
+        aria-label="Agrandir l&#039;image 1"
+      >
+        <div class="block-1-8-projects__card-media">
+          <img width="1365" height="2048" src="/wp-content/uploads/2026/06/Arneg-21_200KB.jpg" class="attachment-2048x2048 size-2048x2048" alt="Espaces de travail ARNEG signés Ronnsquare" loading="lazy" decoding="async" srcset="/wp-content/uploads/2026/06/Arneg-21_200KB.jpg 1365w, /wp-content/uploads/2026/06/Arneg-21_200KB-200x300.jpg 200w, /wp-content/uploads/2026/06/Arneg-21_200KB-683x1024.jpg 683w, /wp-content/uploads/2026/06/Arneg-21_200KB-768x1152.jpg 768w, /wp-content/uploads/2026/06/Arneg-21_200KB-1024x1536.jpg 1024w" sizes="auto, (max-width: 1365px) 100vw, 1365px" />        </div>
+      </figure>
+            <figure
+        class="block-1-8-projects__card anim-hidden"
+        data-anim="card"
+        role="button"
+        tabindex="0"
+        data-lightbox-full="/wp-content/uploads/2026/06/Arneg-22_under200KB.jpg"
+        data-lightbox-alt="Réalisation des bureaux ARNEG par Ronnsquare"
+        aria-label="Agrandir l&#039;image 2"
+      >
+        <div class="block-1-8-projects__card-media">
+          <img width="2048" height="1365" src="/wp-content/uploads/2026/06/Arneg-22_under200KB.jpg" class="attachment-2048x2048 size-2048x2048" alt="Réalisation des bureaux ARNEG par Ronnsquare" loading="lazy" decoding="async" srcset="/wp-content/uploads/2026/06/Arneg-22_under200KB.jpg 2048w, /wp-content/uploads/2026/06/Arneg-22_under200KB-300x200.jpg 300w, /wp-content/uploads/2026/06/Arneg-22_under200KB-1024x683.jpg 1024w, /wp-content/uploads/2026/06/Arneg-22_under200KB-768x512.jpg 768w, /wp-content/uploads/2026/06/Arneg-22_under200KB-1536x1024.jpg 1536w" sizes="auto, (max-width: 2048px) 100vw, 2048px" />        </div>
+      </figure>
+          </div>
+  </div>
+</section>
+<section class="block-7-2-seo block-7-2-seo--inversed block-7-2-seo--no-pt block-7-2-seo--no-pb" data-block="block-7-2-seo" data-bg="sable">
+  <div class="block-7-2-seo__container">
+    <div class="block-7-2-seo__media anim-hidden" data-anim="media">
+      <div class="block-7-2-seo__media-inner" data-anim-img-inner>
+                <img
+          src="/wp-content/uploads/2026/06/Arneg-18_under200KB.jpg"
+          alt="Espace de travail ARNEG réalisé par Ronnsquare"
+          class="block-7-2-seo__img"
+          role="button"
+          tabindex="0"
+          data-lightbox-full="/wp-content/uploads/2026/06/Arneg-18_under200KB.jpg"
+          data-lightbox-alt="Espace de travail ARNEG réalisé par Ronnsquare"
+          aria-label="Agrandir l&#039;image"
+        />
+              </div>
+    </div>
+    <div class="block-7-2-seo__content">
+      <h2 class="block-7-2-seo__title anim-hidden" data-anim="title">Le concept Cœur du Village®</h2>
+      <div class="block-7-2-seo__body anim-hidden" data-anim="body"><p><span style="font-weight: 400;">Pour répondre au besoin d&rsquo;un espace convivial et multifonctions capable d&rsquo;accueillir l&rsquo;ensemble des collaborateurs, nous avons proposé à Arneg le concept du Cœur du Village®, revisité à l&rsquo;image de leur identité de marque grâce à une ambiance industrielle rehaussée de matériaux bruts pour plus d&rsquo;authenticité.</span></p>
+<p><span style="font-weight: 400;">Plus qu&rsquo;un simple lieu de rassemblement, le Cœur du Village® d&rsquo;Arneg est un espace chaleureux qui favorise les interactions et les moments de partage entre collaborateurs, renforçant ainsi le sentiment d&rsquo;appartenance, la cohésion d&rsquo;équipe et le tissu social de l&rsquo;entreprise.</span></p>
+<p><span style="font-weight: 400;">Conçu pour s&rsquo;adapter aux besoins actuels et futurs, cet espace aux allures de coworking module sa configuration et sa capacité d&rsquo;accueil selon les moments et les usages : espace café, réfectoire, afterwork, réunion générale, postes de passage, collaboration, ou encore accueil de clients et prestataires externes. Un lieu véritablement polyvalent, pensé pour accompagner chaque temps de la vie d&rsquo;entreprise.</span></p>
+</div>
+    </div>
+  </div>
+  </section>
+
+    
+<section class="block-1-8-projects block-1-8-projects--related" data-block="block-1-8-projects" data-grid="uniform" aria-label="À découvrir également">
+  <h2 class="block-1-8-projects__title anim-hidden" data-anim="title">À découvrir également</h2>
+
+  <div class="block-1-8-projects__grid">
+            <article class="block-1-8-projects__card anim-hidden" data-anim="card" data-has-slideshow>
+          <div class="block-1-8-projects__slideshow" data-anim-img-inner>
+                                          <img width="1024" height="683" src="/wp-content/uploads/2026/05/GROUPE-PHARMA-4_200kb-1024x683.jpg" class="block-1-8-projects__image block-1-8-projects__image--active" alt="Aménagement intérieur d&#039;un groupe pharmaceutique par Ronnsquare" data-slide="0" sizes="auto, (min-width: 48em) calc((100vw - 160px) / 2), 100vw" loading="lazy" decoding="async" srcset="/wp-content/uploads/2026/05/GROUPE-PHARMA-4_200kb-1024x683.jpg 1024w, /wp-content/uploads/2026/05/GROUPE-PHARMA-4_200kb-300x200.jpg 300w, /wp-content/uploads/2026/05/GROUPE-PHARMA-4_200kb-768x512.jpg 768w, /wp-content/uploads/2026/05/GROUPE-PHARMA-4_200kb-1536x1024.jpg 1536w, /wp-content/uploads/2026/05/GROUPE-PHARMA-4_200kb.jpg 2048w" />                                                        <img width="1024" height="683" src="/wp-content/uploads/2026/05/GROUPE-PHARMA-11_200kb-1024x683.jpg" class="block-1-8-projects__image" alt="Espaces de travail d&#039;un groupe pharmaceutique par Ronnsquare" data-slide="1" sizes="auto, (min-width: 48em) calc((100vw - 160px) / 2), 100vw" loading="lazy" decoding="async" srcset="/wp-content/uploads/2026/05/GROUPE-PHARMA-11_200kb-1024x683.jpg 1024w, /wp-content/uploads/2026/05/GROUPE-PHARMA-11_200kb-300x200.jpg 300w, /wp-content/uploads/2026/05/GROUPE-PHARMA-11_200kb-768x512.jpg 768w, /wp-content/uploads/2026/05/GROUPE-PHARMA-11_200kb-1536x1024.jpg 1536w, /wp-content/uploads/2026/05/GROUPE-PHARMA-11_200kb.jpg 2048w" />                                                        <img width="1024" height="690" src="/wp-content/uploads/2026/05/GROUPE-PHARMA-9_200kb-1024x690.jpg" class="block-1-8-projects__image" alt="Bureaux d&#039;un groupe pharmaceutique conçus par Ronnsquare" data-slide="2" sizes="auto, (min-width: 48em) calc((100vw - 160px) / 2), 100vw" loading="lazy" decoding="async" srcset="/wp-content/uploads/2026/05/GROUPE-PHARMA-9_200kb-1024x690.jpg 1024w, /wp-content/uploads/2026/05/GROUPE-PHARMA-9_200kb-300x202.jpg 300w, /wp-content/uploads/2026/05/GROUPE-PHARMA-9_200kb-768x518.jpg 768w, /wp-content/uploads/2026/05/GROUPE-PHARMA-9_200kb-1536x1035.jpg 1536w, /wp-content/uploads/2026/05/GROUPE-PHARMA-9_200kb.jpg 2048w" />                                      <div class="block-1-8-projects__gradient" aria-hidden="true"></div>
+          </div>
+                      <div class="block-1-8-projects__zones" aria-hidden="true">
+              <div class="block-1-8-projects__zone" data-slide-index="0"></div>
+              <div class="block-1-8-projects__zone" data-slide-index="1"></div>
+              <div class="block-1-8-projects__zone" data-slide-index="2"></div>
+            </div>
+                    <div class="block-1-8-projects__info">
+                          <h3 class="block-1-8-projects__company">GROUPE PHARMA</h3>
+                        <div class="block-1-8-projects__details">
+                              <p class="block-1-8-projects__location">Grand Paris</p>
+                          </div>
+            <a href="/realisations/groupe-pharma/" class="btn btn--parme btn--md block-1-8-projects__btn" data-button-animate-chars><span class="btn__bg" aria-hidden="true"></span><span class="btn__label">Découvrir</span></a>          </div>
+          <div class="block-1-8-projects__scroll-bar" aria-hidden="true">
+            <span class="block-1-8-projects__bar" data-bar-index="0"></span>
+            <span class="block-1-8-projects__bar" data-bar-index="1"></span>
+            <span class="block-1-8-projects__bar" data-bar-index="2"></span>
+          </div>
+        </article>
+        <article class="block-1-8-projects__card anim-hidden" data-anim="card" data-has-slideshow>
+          <div class="block-1-8-projects__slideshow" data-anim-img-inner>
+                                          <img width="1024" height="687" src="/wp-content/uploads/2026/05/6.-CHIFFRES-CLES-1024x687.jpg" class="block-1-8-projects__image block-1-8-projects__image--active" alt="Les chiffres clés de Ronnsquare" data-slide="0" sizes="auto, (min-width: 48em) calc((100vw - 160px) / 2), 100vw" loading="lazy" decoding="async" srcset="/wp-content/uploads/2026/05/6.-CHIFFRES-CLES-1024x687.jpg 1024w, /wp-content/uploads/2026/05/6.-CHIFFRES-CLES-300x201.jpg 300w, /wp-content/uploads/2026/05/6.-CHIFFRES-CLES-768x515.jpg 768w, /wp-content/uploads/2026/05/6.-CHIFFRES-CLES-1536x1030.jpg 1536w, /wp-content/uploads/2026/05/6.-CHIFFRES-CLES.jpg 2047w" />                                                        <img width="1024" height="684" src="/wp-content/uploads/2026/05/abylsen_compressed_3-1-1024x684.jpg" class="block-1-8-projects__image" alt="Bureaux Abylsen réalisés par Ronnsquare" data-slide="1" sizes="auto, (min-width: 48em) calc((100vw - 160px) / 2), 100vw" loading="lazy" decoding="async" srcset="/wp-content/uploads/2026/05/abylsen_compressed_3-1-1024x684.jpg 1024w, /wp-content/uploads/2026/05/abylsen_compressed_3-1-300x200.jpg 300w, /wp-content/uploads/2026/05/abylsen_compressed_3-1-768x513.jpg 768w, /wp-content/uploads/2026/05/abylsen_compressed_3-1-1536x1026.jpg 1536w, /wp-content/uploads/2026/05/abylsen_compressed_3-1.jpg 2048w" />                                                        <img width="1024" height="678" src="/wp-content/uploads/2026/05/abylsen_compressed_1-1-1024x678.jpg" class="block-1-8-projects__image" alt="Aménagement des bureaux Abylsen par Ronnsquare" data-slide="2" sizes="auto, (min-width: 48em) calc((100vw - 160px) / 2), 100vw" loading="lazy" decoding="async" srcset="/wp-content/uploads/2026/05/abylsen_compressed_1-1-1024x678.jpg 1024w, /wp-content/uploads/2026/05/abylsen_compressed_1-1-300x198.jpg 300w, /wp-content/uploads/2026/05/abylsen_compressed_1-1-768x508.jpg 768w, /wp-content/uploads/2026/05/abylsen_compressed_1-1-1536x1016.jpg 1536w, /wp-content/uploads/2026/05/abylsen_compressed_1-1.jpg 2048w" />                                      <div class="block-1-8-projects__gradient" aria-hidden="true"></div>
+          </div>
+                      <div class="block-1-8-projects__zones" aria-hidden="true">
+              <div class="block-1-8-projects__zone" data-slide-index="0"></div>
+              <div class="block-1-8-projects__zone" data-slide-index="1"></div>
+              <div class="block-1-8-projects__zone" data-slide-index="2"></div>
+            </div>
+                    <div class="block-1-8-projects__info">
+                          <h3 class="block-1-8-projects__company">ABYLSEN</h3>
+                        <div class="block-1-8-projects__details">
+                              <p class="block-1-8-projects__location">Paris 8ème</p>
+                          </div>
+            <a href="/realisations/abylsen/" class="btn btn--parme btn--md block-1-8-projects__btn" data-button-animate-chars><span class="btn__bg" aria-hidden="true"></span><span class="btn__label">Découvrir</span></a>          </div>
+          <div class="block-1-8-projects__scroll-bar" aria-hidden="true">
+            <span class="block-1-8-projects__bar" data-bar-index="0"></span>
+            <span class="block-1-8-projects__bar" data-bar-index="1"></span>
+            <span class="block-1-8-projects__bar" data-bar-index="2"></span>
+          </div>
+        </article>
+  </div>
+
+  <div class="block-1-8-projects__cta anim-hidden" data-anim="cta">
+    <a href="/realisations/" class="btn btn--maron btn--md block-1-8-projects__cta-btn" data-button-animate-chars><span class="btn__bg" aria-hidden="true"></span><span class="btn__label">Découvrir nos réalisations</span></a>  </div>
+</section>
+
+</main>
+</div><!-- /data-barba="wrapper" -->
+
+
+<footer class="footer-ronn" data-footer-ronn>
+  <div class="footer-ronn__content">
+
+    <!-- SECTION 1: Map -->
+    <section class="footer-ronn__map">
+              <h2 class="footer-ronn__map-title">Basé à Paris, intervention européenne</h2>
+      
+      <div class="footer-ronn__map-row">
+                <div class="footer-ronn__map-image">
+          <img width="1024" height="276" src="/wp-content/uploads/2026/06/Footer-map-1024x276.png" class="attachment-large size-large" alt="Carte de l&#039;Europe - zones d&#039;intervention de Ronnsquare" sizes="auto, (min-width: 48em) min(1375px, calc(100vw - 429px)), calc(100vw - 20px)" loading="lazy" decoding="async" srcset="/wp-content/uploads/2026/06/Footer-map-1024x276.png 1024w, /wp-content/uploads/2026/06/Footer-map-300x81.png 300w, /wp-content/uploads/2026/06/Footer-map-768x207.png 768w, /wp-content/uploads/2026/06/Footer-map.png 1481w" />        </div>
+        
+        <!-- Desktop: info beside map -->
+        <div class="footer-ronn__map-info footer-ronn__map-info--desktop">
+          <div class="footer-ronn__map-group">
+            <h3 class="footer-ronn__map-group-title">Siège Social à Paris</h3>
+            <p class="footer-ronn__map-group-text">25 rue du 4 Septembre<br />
+75002 Paris</p>
+          </div>
+          <div class="footer-ronn__map-group">
+            <h3 class="footer-ronn__map-group-title">Présence dans 6 pays européens</h3>
+            <p class="footer-ronn__map-group-text">France<br />
+Allemagne<br />
+Espagne<br />
+Italie<br />
+Irlande<br />
+Royaume-Uni</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile: countries below map -->
+      <div class="footer-ronn__map-info footer-ronn__map-info--mobile">
+        <div class="footer-ronn__map-group">
+          <h3 class="footer-ronn__map-group-title">Présence dans 6 pays européens</h3>
+          <p class="footer-ronn__map-group-text">France<br />
+Allemagne<br />
+Espagne<br />
+Italie<br />
+Irlande<br />
+Royaume-Uni</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: Logo + Nav Columns -->
+    <section class="footer-ronn__nav">
+
+      <div class="footer-ronn__nav-brand">
+        <a href="/" class="footer-ronn__nav-logo" aria-label="Ronnsquare - Accueil">
+                    <span class="footer-ronn__nav-logo-anim"
+                data-lottie="persistent"
+                data-lottie-src="/wp-content/themes/ronn_square_back/assets/lottie/footer-logo.json"
+                data-lottie-play="scroll"
+                data-lottie-viewbox="390 242 1142 601"
+                aria-hidden="true"></span>
+          <svg width="116" height="50" viewBox="0 0 116.408 50.0008" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g fill="currentColor">
+    <path data-wm="letter" data-glyph="s" d="M9.95438 32.2447L7.06265 31.6228C4.50739 31.077 4.15426 30.1291 4.15426 29.1863C4.15426 26.929 6.4991 26.5915 7.89704 26.5915C10.4346 26.5915 11.894 27.6842 12.0065 29.6676L12.0346 30.1551H15.7524L15.7483 29.6343C15.716 25.8685 12.5128 23.2383 7.9585 23.2383C5.70637 23.2383 3.80216 23.8008 2.45422 24.8664C1.09898 25.9373 0.3823 27.4311 0.3823 29.1863C0.3823 32.3041 2.31359 34.2739 6.12305 35.0396L9.22936 35.6625C11.4763 36.1021 12.3117 36.8386 12.3117 38.3803C12.3117 40.2897 11.1502 41.2585 8.24184 41.2585C5.33345 41.2585 3.85008 40.1084 3.70633 37.8386L3.67612 37.3542H0L0.0177087 37.8876C0.0843768 39.9324 0.782308 41.6189 2.13338 42.7627C3.55945 43.97 5.6147 44.5825 8.2408 44.5825C13.2128 44.5825 16.1128 42.1481 16.1128 38.3803C16.1128 34.0791 12.5982 32.8197 9.95334 32.2458L9.95438 32.2447Z"/>
+    <path data-wm="letter" data-glyph="r1" d="M3.77482 15.5488L11.8187 21.6624H17.9564L5.69049 12.5674H8.74368C10.9073 12.5674 12.6136 12.0779 13.8157 11.1132C15.1094 10.0736 15.7657 8.53715 15.7657 6.5444C15.7657 2.91724 13.075 0.664062 8.74368 0.664062H0.0351562V21.6624H3.77586V15.5488H3.77482ZM3.77482 3.98601H8.59055C11.5542 3.98601 11.9333 5.36833 11.9333 6.57252C11.9333 8.4059 10.9333 9.1882 8.59055 9.1882H3.77482V3.98601Z"/>
+    <path data-wm="letter" data-glyph="u" d="M55.2703 36.7478C55.2703 39.7541 53.713 41.2156 50.5098 41.2156C47.3066 41.2156 45.8118 39.7541 45.8118 36.7478V23.2559H41.9492V36.8051C41.9492 39.2177 42.7305 41.2083 44.2076 42.5604C45.7035 43.9292 47.8243 44.624 50.5098 44.624C53.1953 44.624 55.3776 43.9303 56.8777 42.5615C58.3527 41.2146 59.1329 39.225 59.1329 36.8051V23.2559H55.2703V36.7478Z"/>
+    <path data-wm="letter" data-glyph="a" d="M67.6752 23.2656L60.6407 44.264H64.7189L66.3752 39.1035H74.6316L76.2879 44.264H80.364L73.3941 23.2656H67.6752ZM67.4439 35.7815L70.5023 26.2105L73.5607 35.7815H67.4429H67.4439Z"/>
+    <path data-wm="letter" data-glyph="r2" d="M91.6734 35.169C93.8369 35.169 95.5432 34.6794 96.7453 33.7148C98.0391 32.6752 98.6954 31.1387 98.6954 29.146C98.6954 25.5188 96.0047 23.2656 91.6734 23.2656H82.9648V44.264H86.7055V38.1503L94.7495 44.264H100.887L88.6202 35.17H91.6734V35.169ZM86.7045 26.5876H91.5202C94.4838 26.5876 94.863 27.9699 94.863 29.1741C94.863 31.0075 93.863 31.7887 91.5202 31.7887H86.7045V26.5865V26.5876Z"/>
+    <path data-wm="letter" data-glyph="e" d="M116.408 26.6449V23.2656H102.18V44.264H116.408V40.8837H105.981V35.1409H115.457V31.7617H105.981V26.6449H116.408Z"/>
+    <path data-wm="letter" data-glyph="n1" d="M45.7121 4.46935L52.933 21.6624H59.1311V0.664062H55.4112V18.0342L48.0059 0.664062H41.9922V21.6624H45.7121V4.46935Z"/>
+    <path data-wm="letter" data-glyph="n2" d="M66.436 4.46935L73.6966 21.6624H79.929V0.664062H76.1894V18.0342L68.7423 0.664062H62.6953V21.6624H66.436V4.46935Z"/>
+    <path data-wm="shape" data-shape="circle" d="M28.589 44.5921C22.6702 44.5921 17.8555 39.7775 17.8555 33.8586C17.8555 27.9397 22.6702 23.125 28.589 23.125C34.5079 23.125 39.3226 27.9397 39.3226 33.8586C39.3226 39.7775 34.5079 44.5921 28.589 44.5921ZM28.589 40.9296C32.4881 40.9296 35.66 37.7576 35.66 33.8586C35.66 29.9595 32.4881 26.7876 28.589 26.7876C24.69 26.7876 21.518 29.9595 21.518 33.8586C21.518 37.7576 24.69 40.9296 28.589 40.9296Z"/>
+    <path data-wm="shape" data-shape="diamond" d="M28.5878 17.8764L34.8921 11.5721L28.5878 5.26782L22.2834 11.5721L28.5878 17.8764ZM28.5878 23.1442L17.0156 11.5721L28.5878 0L40.1599 11.5721L28.5878 23.1442Z"/>
+    <path data-wm="shape" data-shape="triangle" d="M34.0054 50.0008L28.5887 44.584L23.1719 50.0008H34.0054Z"/>
+  </g>
+</svg>
+                      <span class="footer-ronn__nav-tagline">Investir l&#039;espace</span>
+                  </a>
+                  <a href="mailto:contact@ronnsquare.fr" class="footer-ronn__nav-email">contact@ronnsquare.fr</a>
+              </div>
+
+      <!-- Mobile-only: siege social -->
+      <div class="footer-ronn__mobile-siege">
+        <h3 class="footer-ronn__map-group-title">Siège Social à Paris</h3>
+        <p class="footer-ronn__map-group-text">25 rue du 4 Septembre<br />
+75002 Paris</p>
+      </div>
+
+      <!-- Mobile-only: newsletter -->
+      <div class="footer-ronn__mobile-newsletter">
+        <span class="footer-ronn__newsletter-label">Newsletter inscription</span>
+        <form class="footer-ronn__newsletter-form" novalidate>
+  <div class="footer-ronn__newsletter-row">
+    <label for="footer-email-mobile" class="sr-only">Email</label>
+    <input type="email" id="footer-email-mobile" name="email" class="footer-ronn__newsletter-input"
+           placeholder="Email" autocomplete="email" required
+           pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+           aria-describedby="rs-nl-err-mobile"
+           data-error-required="Veuillez saisir votre email."
+           data-error-type="Veuillez saisir un email valide."
+           data-error-pattern="Veuillez saisir un email valide.">
+    <button type="submit" class="footer-ronn__newsletter-btn" aria-label="S&#039;inscrire à la newsletter">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+  <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+    </button>
+  </div>
+  <span class="field-error field-error--footer" id="rs-nl-err-mobile" data-field-error role="alert" aria-live="polite"></span>
+
+    <div class="form-honeypot" aria-hidden="true">
+    <input type="text" name="website" tabindex="-1" autocomplete="off">
+  </div>
+
+    <div class="footer-ronn__newsletter-consent" data-consent-gate hidden>
+    <label class="checkbox checkbox--footer">
+      <input class="checkbox__input" type="checkbox" name="consent_privacy" id="footer-consent-mobile" required
+             aria-describedby="rs-nl-consent-err-mobile"
+             data-error-required="Veuillez accepter la Politique de Confidentialité.">
+      <span class="checkbox__box" aria-hidden="true">
+        <svg viewBox="0 0 12 12" fill="none"><path d="M2.5 6L5 8.5 9.5 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+      <span class="checkbox__label">J'accepte la <a class="consent-link" href="/politique-de-confidentialite/" data-privacy-open>Politique de Confidentialité</a> de Ronnsquare. Il est également protégé par reCAPTCHA ; la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Politique de confidentialité</a> et les <a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer">Conditions d'utilisation</a> de Google s'appliquent.</span>
+    </label>
+    <span class="field-error field-error--footer" id="rs-nl-consent-err-mobile" data-field-error role="alert" aria-live="polite"></span>
+  </div>
+</form>
+      </div>
+
+      <!-- Mobile-only: social -->
+            <div class="footer-ronn__mobile-social">
+                <a href="https://www.linkedin.com/company/ronnsquare/" class="footer-ronn__social-link" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <span class="footer-ronn__social-icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.333 6.66797C14.6591 6.66797 15.9309 7.19475 16.8685 8.13243C17.8062 9.07012 18.333 10.3419 18.333 11.668V17.5013H14.9997V11.668C14.9997 11.2259 14.8241 10.802 14.5115 10.4895C14.199 10.1769 13.775 10.0013 13.333 10.0013C12.891 10.0013 12.4671 10.1769 12.1545 10.4895C11.8419 10.802 11.6663 11.2259 11.6663 11.668V17.5013H8.33301V11.668C8.33301 10.3419 8.85979 9.07012 9.79747 8.13243C10.7352 7.19475 12.0069 6.66797 13.333 6.66797Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5.00033 7.5H1.66699V17.5H5.00033V7.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3.33366 5.0013C4.25413 5.0013 5.00033 4.25511 5.00033 3.33464C5.00033 2.41416 4.25413 1.66797 3.33366 1.66797C2.41318 1.66797 1.66699 2.41416 1.66699 3.33464C1.66699 4.25511 2.41318 5.0013 3.33366 5.0013Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</span>
+          <span>LinkedIn</span>
+        </a>
+              </div>
+      
+      <!-- Nav columns -->
+            <div class="footer-ronn__nav-columns">
+                <div class="footer-ronn__nav-col">
+          <h3 class="footer-ronn__nav-col-title">Expertises</h3>
+                    <ul class="footer-ronn__nav-col-list">
+                        <li><a href="/expertises/conseil-strategique/" class="footer-ronn__nav-col-link">Conseil Stratégique</a></li>
+                        <li><a href="/expertises/architecture-design/" class="footer-ronn__nav-col-link">Architecture &amp; Design</a></li>
+                        <li><a href="/expertises/technique-realisation/" class="footer-ronn__nav-col-link">Technique &amp; Réalisation</a></li>
+                        <li><a href="/expertises/durabilite-ecologie/" class="footer-ronn__nav-col-link">Durabilité &amp; Ecologie</a></li>
+                        <li><a href="/expertises/" class="footer-ronn__nav-col-link">Voir toutes les expertises</a></li>
+                      </ul>
+                  </div>
+                <div class="footer-ronn__nav-col">
+          <h3 class="footer-ronn__nav-col-title">Vos préoccupations</h3>
+                    <ul class="footer-ronn__nav-col-list">
+                        <li><a href="/preoccupations/fin-de-bail/" class="footer-ronn__nav-col-link">Fin de Bail</a></li>
+                        <li><a href="/preoccupations/faire-revenir-les-equipes/" class="footer-ronn__nav-col-link">Faire revenir les équipes</a></li>
+                        <li><a href="/preoccupations/attirer-et-retenir-les-talents/" class="footer-ronn__nav-col-link">Attirer et retenir les talents</a></li>
+                        <li><a href="/preoccupations/projets-complexes/" class="footer-ronn__nav-col-link">Projets complexes</a></li>
+                        <li><a href="/preoccupations/" class="footer-ronn__nav-col-link">Voir toutes préoccupations</a></li>
+                      </ul>
+                  </div>
+                <div class="footer-ronn__nav-col">
+          <h3 class="footer-ronn__nav-col-title">Réalisations</h3>
+                    <ul class="footer-ronn__nav-col-list">
+                        <li><a href="/realisations/niterra/" class="footer-ronn__nav-col-link">Niterra</a></li>
+                        <li><a href="/realisations/merz-aesthetic/" class="footer-ronn__nav-col-link">Merz Aesthetics</a></li>
+                        <li><a href="/realisations/rodl-partner/" class="footer-ronn__nav-col-link">Rödl &amp; Partner</a></li>
+                        <li><a href="/realisations/abylsen/" class="footer-ronn__nav-col-link">Abylsen</a></li>
+                        <li><a href="/realisations/" class="footer-ronn__nav-col-link">Toutes nos réalisations</a></li>
+                      </ul>
+                  </div>
+                <div class="footer-ronn__nav-col">
+          <h3 class="footer-ronn__nav-col-title">Entreprise</h3>
+                    <ul class="footer-ronn__nav-col-list">
+                        <li><a href="/adn-equipe/" class="footer-ronn__nav-col-link">ADN &amp; Équipe</a></li>
+                        <li><a href="/temoignages/" class="footer-ronn__nav-col-link">Témoignages clients</a></li>
+                        <li><a href="/faq/" class="footer-ronn__nav-col-link">FAQ</a></li>
+                        <li><a href="/contact/" class="footer-ronn__nav-col-link">Contactez-nous</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </section>
+
+    <!-- SECTION 3: Bottom Bar (desktop) -->
+    <section class="footer-ronn__bottom">
+      <div class="footer-ronn__bottom-legal">
+        <span>© 2026 Ronnsquare. Tous droits réservés.</span>
+                <span class="footer-ronn__bottom-legal-sep">|</span>
+        <a href="/mentions-legales/" data-legal-open>Mentions légales</a>
+                <span class="footer-ronn__bottom-legal-sep">|</span>
+        <a href="/politique-de-confidentialite/" data-privacy-open>Politique de confidentialité</a>
+              </div>
+
+      <div class="footer-ronn__bottom-newsletter">
+        <span class="footer-ronn__newsletter-label">Newsletter inscription</span>
+        <form class="footer-ronn__newsletter-form" novalidate>
+  <div class="footer-ronn__newsletter-row">
+    <label for="footer-email-desktop" class="sr-only">Email</label>
+    <input type="email" id="footer-email-desktop" name="email" class="footer-ronn__newsletter-input"
+           placeholder="Email" autocomplete="email" required
+           pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+           aria-describedby="rs-nl-err-desktop"
+           data-error-required="Veuillez saisir votre email."
+           data-error-type="Veuillez saisir un email valide."
+           data-error-pattern="Veuillez saisir un email valide.">
+    <button type="submit" class="footer-ronn__newsletter-btn" aria-label="S&#039;inscrire à la newsletter">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+  <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+    </button>
+  </div>
+  <span class="field-error field-error--footer" id="rs-nl-err-desktop" data-field-error role="alert" aria-live="polite"></span>
+
+    <div class="form-honeypot" aria-hidden="true">
+    <input type="text" name="website" tabindex="-1" autocomplete="off">
+  </div>
+
+    <div class="footer-ronn__newsletter-consent" data-consent-gate hidden>
+    <label class="checkbox checkbox--footer">
+      <input class="checkbox__input" type="checkbox" name="consent_privacy" id="footer-consent-desktop" required
+             aria-describedby="rs-nl-consent-err-desktop"
+             data-error-required="Veuillez accepter la Politique de Confidentialité.">
+      <span class="checkbox__box" aria-hidden="true">
+        <svg viewBox="0 0 12 12" fill="none"><path d="M2.5 6L5 8.5 9.5 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+      <span class="checkbox__label">J'accepte la <a class="consent-link" href="/politique-de-confidentialite/" data-privacy-open>Politique de Confidentialité</a> de Ronnsquare. Il est également protégé par reCAPTCHA ; la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Politique de confidentialité</a> et les <a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer">Conditions d'utilisation</a> de Google s'appliquent.</span>
+    </label>
+    <span class="field-error field-error--footer" id="rs-nl-consent-err-desktop" data-field-error role="alert" aria-live="polite"></span>
+  </div>
+</form>
+      </div>
+
+            <div class="footer-ronn__bottom-social">
+                <a href="https://www.linkedin.com/company/ronnsquare/" class="footer-ronn__social-link" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <span class="footer-ronn__social-icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.333 6.66797C14.6591 6.66797 15.9309 7.19475 16.8685 8.13243C17.8062 9.07012 18.333 10.3419 18.333 11.668V17.5013H14.9997V11.668C14.9997 11.2259 14.8241 10.802 14.5115 10.4895C14.199 10.1769 13.775 10.0013 13.333 10.0013C12.891 10.0013 12.4671 10.1769 12.1545 10.4895C11.8419 10.802 11.6663 11.2259 11.6663 11.668V17.5013H8.33301V11.668C8.33301 10.3419 8.85979 9.07012 9.79747 8.13243C10.7352 7.19475 12.0069 6.66797 13.333 6.66797Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5.00033 7.5H1.66699V17.5H5.00033V7.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3.33366 5.0013C4.25413 5.0013 5.00033 4.25511 5.00033 3.33464C5.00033 2.41416 4.25413 1.66797 3.33366 1.66797C2.41318 1.66797 1.66699 2.41416 1.66699 3.33464C1.66699 4.25511 2.41318 5.0013 3.33366 5.0013Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</span>
+          <span>LinkedIn</span>
+        </a>
+              </div>
+          </section>
+
+    <!-- Mobile-only: Legal links -->
+    <div class="footer-ronn__mobile-legal">
+            <a href="/mentions-legales/" data-legal-open>Mentions légales</a>
+            <a href="/politique-de-confidentialite/" data-privacy-open>Politique de confidentialité</a>
+            <span>© 2026 Ronnsquare. Tous droits réservés.</span>
+    </div>
+
+    <!-- Credit — language-aware: FR "Fait par colibrity" (baked SVG), EN "Made by" text + logo -->
+        <a class="footer-ronn__credit footer-ronn__credit--en" href="https://astracognixsolutions.in/" target="_blank" rel="noopener" aria-label="Made by AstraCognix Solutions in Patna, Bihar, India" style="text-decoration: none; cursor: pointer; display: inline-flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
+        <span class="footer-ronn__credit-label" style="opacity: 0.85;">Made by</span>
+        <span style="font-family: var(--font-secondary, sans-serif); font-size: 0.875rem; font-weight: 600; color: var(--color-headline-sable, #eedfd0); letter-spacing: 0.02em;">AstraCognix Solutions</span>
+        <span style="display: inline-flex; align-items: center; gap: 0.25rem; font-size: 0.8125rem; font-weight: 500; color: var(--color-headline-sable, #eedfd0); padding: 0.15rem 0.5rem; background: rgba(238, 223, 208, 0.12); border-radius: 9999px; border: 1px solid rgba(238, 223, 208, 0.22);">
+          📍 Patna, Bihar, India
+        </span>
+      </a>
+
+  </div>
+</footer>
+
+<div
+  class="legal-mentions"
+  data-legal-modal
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="legal-mentions-title"
+  hidden
+>
+  <div class="legal-mentions__backdrop" data-legal-close></div>
+
+  <div class="legal-mentions__modal" role="document">
+
+    <header class="legal-mentions__header">
+      <h2 class="legal-mentions__title" id="legal-mentions-title">Mentions Légales</h2>
+      <button
+        type="button"
+        class="legal-mentions__close"
+        data-legal-close
+        aria-label="Fermer"
+      >
+        <svg viewBox="0 0 14 14" fill="none" aria-hidden="true">
+          <path d="M2 2l10 10M12 2L2 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </header>
+
+    <div class="legal-mentions__body">
+
+      <aside class="legal-mentions__sidebar">
+        <span class="legal-mentions__sidebar-label">Sommaire</span>
+        <nav class="legal-mentions__nav" aria-label="Sections">
+                    <button
+            type="button"
+            class="legal-mentions__nav-item legal-mentions__nav-item--active"
+            data-legal-nav="Éditeur du site"
+            aria-current="true"
+          >
+            Éditeur du site          </button>
+                    <button
+            type="button"
+            class="legal-mentions__nav-item"
+            data-legal-nav="Hébergement"
+            aria-current="false"
+          >
+            Hébergement          </button>
+                    <button
+            type="button"
+            class="legal-mentions__nav-item"
+            data-legal-nav="Propriété intellectuelle"
+            aria-current="false"
+          >
+            Propriété intellectuelle          </button>
+                    <button
+            type="button"
+            class="legal-mentions__nav-item"
+            data-legal-nav="Responsabilité"
+            aria-current="false"
+          >
+            Responsabilité          </button>
+                    <button
+            type="button"
+            class="legal-mentions__nav-item"
+            data-legal-nav="Données personnelles"
+            aria-current="false"
+          >
+            Données personnelles          </button>
+                    <button
+            type="button"
+            class="legal-mentions__nav-item"
+            data-legal-nav="Contact"
+            aria-current="false"
+          >
+            Contact          </button>
+                  </nav>
+      </aside>
+
+      <div class="legal-mentions__content" data-legal-scroll data-lenis-prevent>
+                <section
+          class="legal-mentions__section"
+          id="legal-section-Éditeur du site"
+          data-legal-section="Éditeur du site"
+        >
+          <h3 class="legal-mentions__section-title">Éditeur du site</h3>
+          <div class="legal-mentions__section-body">
+            <p><strong>Le présent site est édité par :</strong></p>
+            <p><strong>AstraCognix Solutions</strong><br />
+            Siège : Patna, Bihar – Inde 🇮🇳<br />
+            Site web : <strong><a href="https://astracognixsolutions.in/" target="_blank" rel="noopener">astracognixsolutions.in</a></strong><br />
+            Email : <strong><a href="mailto:info@astracognixsolutions.in">info@astracognixsolutions.in</a></strong></p>
+            <p><strong>Conçu et développé à :</strong> Patna, Bihar, Inde</p>
+            <p>Directeur de la publication : AstraCognix Solutions</p>
+          </div>
+        </section>
+                <section
+          class="legal-mentions__section"
+          id="legal-section-Hébergement"
+          data-legal-section="Hébergement"
+        >
+          <h3 class="legal-mentions__section-title">Hébergement</h3>
+          <div class="legal-mentions__section-body">
+            <p><strong>Le site est hébergé par :<br />
+</strong><a href="https://www.o2switch.fr?utm_source=chatgpt.com"><strong>o2switch</strong></a><br />
+222 Boulevard Gustave Flaubert<br />
+63000 Clermont-Ferrand – France</p>
+          </div>
+        </section>
+                <section
+          class="legal-mentions__section"
+          id="legal-section-Propriété intellectuelle"
+          data-legal-section="Propriété intellectuelle"
+        >
+          <h3 class="legal-mentions__section-title">Propriété intellectuelle</h3>
+          <div class="legal-mentions__section-body">
+            <p>L&rsquo;ensemble des contenus présents sur ce site (textes, images, vidéos, logos, graphismes, documents et éléments visuels) est la propriété exclusive de Ronnsquare ou de ses partenaires.</p>
+<p>Toute reproduction, diffusion ou utilisation, totale ou partielle, sans autorisation préalable écrite est interdite.</p>
+          </div>
+        </section>
+                <section
+          class="legal-mentions__section"
+          id="legal-section-Responsabilité"
+          data-legal-section="Responsabilité"
+        >
+          <h3 class="legal-mentions__section-title">Responsabilité</h3>
+          <div class="legal-mentions__section-body">
+            <p>Ronnsquare met tout en œuvre pour assurer l&rsquo;exactitude des informations diffusées sur ce site. Toutefois, aucune garantie n&rsquo;est donnée quant à leur exhaustivité ou leur mise à jour permanente.</p>
+<p>Ronnsquare ne pourra être tenue responsable des dommages directs ou indirects liés à l&rsquo;utilisation du site.</p>
+          </div>
+        </section>
+                <section
+          class="legal-mentions__section"
+          id="legal-section-Données personnelles"
+          data-legal-section="Données personnelles"
+        >
+          <h3 class="legal-mentions__section-title">Données personnelles</h3>
+          <div class="legal-mentions__section-body">
+            <p>Les informations recueillies via les formulaires du site sont utilisées uniquement dans le cadre de nos échanges commerciaux et du suivi des demandes.</p>
+<p>Pour en savoir plus, consultez notre Politique de confidentialité.</p>
+<p>Conformément au RGPD, vous disposez d&rsquo;un droit d&rsquo;accès, de rectification, de suppression et d&rsquo;opposition concernant vos données personnelles.</p>
+<p>Pour toute demande : <strong><a href="mailto:contact@ronnsquare.fr">contact@ronnsquare.fr</a></strong></p>
+          </div>
+        </section>
+                <section
+          class="legal-mentions__section"
+          id="legal-section-Contact"
+          data-legal-section="Contact"
+        >
+          <h3 class="legal-mentions__section-title">Contact</h3>
+          <div class="legal-mentions__section-body">
+            <p><strong><a href="tel:04 75 61 61 27">04 75 61 61 27</a></strong><br />
+<strong><a href="mailto:contact@ronnsquare.fr">contact@ronnsquare.fr</a></strong><br />
+3 Allée Charponnet – 26400 Allex</p>
+          </div>
+        </section>
+              </div>
+
+    </div>
+  </div>
+</div>
+
+<div
+  class="privacy-policy"
+  data-privacy-modal
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="privacy-policy-title"
+  hidden
+>
+  <div class="privacy-policy__backdrop" data-privacy-close></div>
+
+  <div class="privacy-policy__modal" role="document">
+
+    <header class="privacy-policy__header">
+      <h2 class="privacy-policy__title" id="privacy-policy-title">Politique de Confidentialité</h2>
+      <button
+        type="button"
+        class="privacy-policy__close"
+        data-privacy-close
+        aria-label="Fermer"
+      >
+        <svg viewBox="0 0 14 14" fill="none" aria-hidden="true">
+          <path d="M2 2l10 10M12 2L2 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </header>
+
+    <div class="privacy-policy__body">
+
+      <aside class="privacy-policy__sidebar">
+        <span class="privacy-policy__sidebar-label">Sommaire</span>
+        <nav class="privacy-policy__nav" aria-label="Sections">
+                    <button
+            type="button"
+            class="privacy-policy__nav-item privacy-policy__nav-item--active"
+            data-privacy-nav="1. Responsable du traitement"
+            aria-current="true"
+          >
+            1. Responsable du traitement          </button>
+                    <button
+            type="button"
+            class="privacy-policy__nav-item"
+            data-privacy-nav="2. Données personnelles collectées"
+            aria-current="false"
+          >
+            2. Données personnelles collectées          </button>
+                    <button
+            type="button"
+            class="privacy-policy__nav-item"
+            data-privacy-nav="3. Finalités et bases légales"
+            aria-current="false"
+          >
+            3. Finalités et bases légales          </button>
+                    <button
+            type="button"
+            class="privacy-policy__nav-item"
+            data-privacy-nav="4. Cookies et technologies similaires"
+            aria-current="false"
+          >
+            4. Cookies et technologies similaires          </button>
+                    <button
+            type="button"
+            class="privacy-policy__nav-item"
+            data-privacy-nav="5. Transferts hors Union européenne"
+            aria-current="false"
+          >
+            5. Transferts hors Union européenne          </button>
+                    <button
+            type="button"
+            class="privacy-policy__nav-item"
+            data-privacy-nav="6. Durée de conservation"
+            aria-current="false"
+          >
+            6. Durée de conservation          </button>
+                    <button
+            type="button"
+            class="privacy-policy__nav-item"
+            data-privacy-nav="7. Vos droits"
+            aria-current="false"
+          >
+            7. Vos droits          </button>
+                    <button
+            type="button"
+            class="privacy-policy__nav-item"
+            data-privacy-nav="8. Conception et gestion du site"
+            aria-current="false"
+          >
+            8. Conception et gestion du site          </button>
+                    <button
+            type="button"
+            class="privacy-policy__nav-item"
+            data-privacy-nav="9. Sécurité"
+            aria-current="false"
+          >
+            9. Sécurité          </button>
+                    <button
+            type="button"
+            class="privacy-policy__nav-item"
+            data-privacy-nav="10. Modification de la présente politique"
+            aria-current="false"
+          >
+            10. Modification de la présente politique          </button>
+                  </nav>
+      </aside>
+
+      <div class="privacy-policy__content" data-privacy-scroll data-lenis-prevent>
+                <section
+          class="privacy-policy__section"
+          id="privacy-section-1. Responsable du traitement"
+          data-privacy-section="1. Responsable du traitement"
+        >
+          <h3 class="privacy-policy__section-title">1. Responsable du traitement</h3>
+          <div class="privacy-policy__section-body">
+            <p><span style="display: inline-block;width: 0px;overflow: hidden;line-height: 0" data-mce-type="bookmark" class="mce_SELRES_start">﻿</span>Le responsable du traitement des données collectées via ce site est :</p>
+<p>RONNSQUARE | ALPES DAUPHINE PROVENCE BUREAU<br />
+Société au capital de 1 000 000,00 €<br />
+RCS ROMANS : 444 996 268<br />
+SIRET : 44499626800033<br />
+3 Allée Charponnet, 26400 Allex – France<br />
+Email : <strong><a href="mailto:contact@ronnsquare.fr">contact@ronnsquare.fr</a></strong><br />
+Tél. :<strong> <a href="tel:04 75 61 61 27">04 75 61 61 27</a></strong></p>
+          </div>
+        </section>
+                <section
+          class="privacy-policy__section"
+          id="privacy-section-2. Données personnelles collectées"
+          data-privacy-section="2. Données personnelles collectées"
+        >
+          <h3 class="privacy-policy__section-title">2. Données personnelles collectées</h3>
+          <div class="privacy-policy__section-body">
+            <p>Nous collectons les données suivantes :</p>
+<ul>
+<li>Via les formulaires de contact : nom, prénom, adresse e-mail, numéro de téléphone, message.</li>
+<li>Données de navigation : adresse IP, pages visitées, durée des sessions, type de navigateur et appareil (via Google Analytics et Microsoft Clarity).</li>
+<li>Données comportementales : enregistrements de sessions et cartes de chaleur (via Microsoft Clarity, avec consentement).</li>
+<li>Préférences de cookies : consentement enregistré via Axeptio.</li>
+</ul>
+          </div>
+        </section>
+                <section
+          class="privacy-policy__section"
+          id="privacy-section-3. Finalités et bases légales"
+          data-privacy-section="3. Finalités et bases légales"
+        >
+          <h3 class="privacy-policy__section-title">3. Finalités et bases légales</h3>
+          <div class="privacy-policy__section-body">
+            <p>Vos données sont traitées pour les finalités suivantes :</p>
+<p><strong>Traitement des demandes de contact</strong> – Base légale : intérêt légitime / exécution précontractuelle.</p>
+<p><strong>Analyse de l’audience et amélioration du site</strong> (Google Analytics, Microsoft Clarity) – Base légale : consentement.</p>
+<p><strong>Gestion des balises marketing et analytiques</strong> (Google Tag Manager) – Base légale : consentement.</p>
+<p><strong>Gestion du consentement aux cookies</strong> (Axeptio) – Base légale : obligation légale (RGPD, directive ePrivacy).</p>
+          </div>
+        </section>
+                <section
+          class="privacy-policy__section"
+          id="privacy-section-4. Cookies et technologies similaires"
+          data-privacy-section="4. Cookies et technologies similaires"
+        >
+          <h3 class="privacy-policy__section-title">4. Cookies et technologies similaires</h3>
+          <div class="privacy-policy__section-body">
+            <p>Ce site utilise des cookies. Lors de votre première visite, un bandeau de consentement géré par Axeptio vous permet d’accepter ou de refuser les cookies non essentiels.</p>
+<p><strong>Cookies utilisés :</strong></p>
+<ul>
+<li>Cookies strictement nécessaires : fonctionnement du site, mémorisation du consentement (Axeptio). Aucun consentement requis.</li>
+<li>Cookies analytiques – Google Analytics : mesure d’audience, statistiques de fréquentation (Google LLC, États-Unis). Consentement requis.</li>
+<li>Cookies de gestion des balises – Google Tag Manager : activation conditionnelle des scripts selon le consentement (Google LLC). Consentement requis.</li>
+<li>Cookies comportementaux – Microsoft Clarity : enregistrement de sessions, cartes thermiques (Microsoft Corporation, États-Unis). Consentement requis.</li>
+</ul>
+<p>Vous pouvez modifier vos préférences de cookies à tout moment en cliquant sur <a href="#cookies">ce lien</a>.</p>
+          </div>
+        </section>
+                <section
+          class="privacy-policy__section"
+          id="privacy-section-5. Transferts hors Union européenne"
+          data-privacy-section="5. Transferts hors Union européenne"
+        >
+          <h3 class="privacy-policy__section-title">5. Transferts hors Union européenne</h3>
+          <div class="privacy-policy__section-body">
+            <p>Certains prestataires (Google LLC, Microsoft Corporation) sont établis aux États-Unis. Ces transferts sont encadrés par les clauses contractuelles types de la Commission européenne et/ou par le cadre UE-États-Unis (Data Privacy Framework). Axeptio est un prestataire français, les données de consentement restent dans l’Union européenne.</p>
+          </div>
+        </section>
+                <section
+          class="privacy-policy__section"
+          id="privacy-section-6. Durée de conservation"
+          data-privacy-section="6. Durée de conservation"
+        >
+          <h3 class="privacy-policy__section-title">6. Durée de conservation</h3>
+          <div class="privacy-policy__section-body">
+            <ul>
+<li>Données de contact : 3 ans à compter du dernier contact.</li>
+<li>Données analytiques (Google Analytics) : 26 mois maximum.</li>
+<li>Enregistrements de sessions (Microsoft Clarity) : 30 jours.</li>
+<li>Consentement cookies (Axeptio) : 13 mois.</li>
+</ul>
+          </div>
+        </section>
+                <section
+          class="privacy-policy__section"
+          id="privacy-section-7. Vos droits"
+          data-privacy-section="7. Vos droits"
+        >
+          <h3 class="privacy-policy__section-title">7. Vos droits</h3>
+          <div class="privacy-policy__section-body">
+            <p>Conformément au RGPD (Règlement (UE) 2016/679), vous disposez des droits suivants :</p>
+<ul>
+<li>Droit d’accès à vos données personnelles.</li>
+<li>Droit de rectification des données inexactes ou incomplètes.</li>
+<li>Droit à l’effacement (« droit à l’oubli »).</li>
+<li>Droit à la limitation du traitement.</li>
+<li>Droit d’opposition au traitement.</li>
+<li>Droit à la portabilité de vos données.</li>
+<li>Droit de retirer votre consentement à tout moment, sans que cela n’affecte la licéité du traitement antérieur.</li>
+</ul>
+<p>Pour exercer vos droits, contactez-nous :</p>
+<ul>
+<li>Par e-mail : <strong><a href="mailto:contact@ronnsquare.fr">contact@ronnsquare.fr</a></strong></li>
+<li>Par courrier : RONNSQUARE, 3 Allée Charponnet, 26400 Allex – France</li>
+</ul>
+<p>Vous avez également le droit d’introduire une réclamation auprès de la CNIL : www.cnil.fr</p>
+          </div>
+        </section>
+                <section
+          class="privacy-policy__section"
+          id="privacy-section-8. Conception et gestion du site"
+          data-privacy-section="8. Conception et gestion du site"
+        >
+          <h3 class="privacy-policy__section-title">8. Conception et gestion du site</h3>
+          <div class="privacy-policy__section-body">
+            <p>Ce site a été conçu, développé et est géré par AstraCognix Solutions, Patna, Bihar, Inde (astracognixsolutions.in). En tant que prestataire technique, AstraCognix Solutions agit en qualité de partenaire technique et sous-traitant au sens du RGPD et traite les données uniquement selon les instructions de RONNSQUARE.</p>
+          </div>
+        </section>
+                <section
+          class="privacy-policy__section"
+          id="privacy-section-9. Sécurité"
+          data-privacy-section="9. Sécurité"
+        >
+          <h3 class="privacy-policy__section-title">9. Sécurité</h3>
+          <div class="privacy-policy__section-body">
+            <p>Nous mettons en œuvre des mesures techniques et organisationnelles appropriées pour protéger vos données contre tout accès non autorisé, perte, destruction ou divulgation accidentelle. Le site est hébergé par o2switch (Clermont-Ferrand, France), hébergeur certifié et soumis au droit français.</p>
+          </div>
+        </section>
+                <section
+          class="privacy-policy__section"
+          id="privacy-section-10. Modification de la présente politique"
+          data-privacy-section="10. Modification de la présente politique"
+        >
+          <h3 class="privacy-policy__section-title">10. Modification de la présente politique</h3>
+          <div class="privacy-policy__section-body">
+            <p>Nous nous réservons le droit de modifier cette politique de confidentialité à tout moment, notamment pour nous conformer aux évolutions légales ou aux changements de nos pratiques. La date de dernière mise à jour figure en haut de ce document.</p>
+<p><strong>Contact</strong></p>
+<p><strong><a href="tel:04 75 61 61 27">04 75 61 61 27</a></strong></p>
+<p><strong><a href="mailto:contact@ronnsquare.fr">contact@ronnsquare.fr</a></strong></p>
+<p>3 Allée Charponnet – 26400 Allex</p>
+          </div>
+        </section>
+              </div>
+
+    </div>
+  </div>
+</div>
+
+<div
+  class="lightbox"
+  data-lightbox-modal
+  role="dialog"
+  aria-modal="true"
+  aria-label="Galerie d&#039;images"
+  hidden
+>
+  <div class="lightbox__backdrop" data-lightbox-close></div>
+
+  <button
+    type="button"
+    class="lightbox__close"
+    data-lightbox-close
+    aria-label="Fermer"
+  >
+    <svg viewBox="0 0 14 14" fill="none" aria-hidden="true">
+      <path d="M2 2l10 10M12 2L2 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+    </svg>
+  </button>
+
+  <button
+    type="button"
+    class="lightbox__arrow lightbox__arrow--prev"
+    data-lightbox-prev
+    aria-label="Image précédente"
+  >
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+  <path d="M19 12H5M5 12L12 5M5 12L12 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>  </button>
+
+  <figure class="lightbox__figure">
+    <img class="lightbox__img" alt="" />
+  </figure>
+
+  <button
+    type="button"
+    class="lightbox__arrow lightbox__arrow--next"
+    data-lightbox-next
+    aria-label="Image suivante"
+  >
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+  <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+  </button>
+</div>
+<div class="success-popup success-popup--modal" data-form-success="contact" hidden
+     role="dialog" aria-modal="true" aria-labelledby="rs-contact-success-title">
+    <div class="success-popup__backdrop" data-success-close></div>
+  
+  <div class="success-popup__card">
+    <button type="button" class="success-popup__close" data-success-close aria-label="Fermer">
+      <svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 2l10 10M12 2L2 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+    </button>
+
+    <span class="success-popup__icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+  <path d="M5 12.5L10 17.5L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+    </span>
+
+    <div class="success-popup__text">
+      <p class="success-popup__title" id="rs-contact-success-title">Merci !</p>
+            <p class="success-popup__body">Votre message a bien été envoyé.</p>
+          </div>
+
+        <button type="button" class="success-popup__cta" data-success-close>Fermer</button>
+    
+    <span class="success-popup__progress" data-success-progress aria-hidden="true"></span>
+  </div>
+</div>
+<div class="success-popup success-popup--toast" data-form-success="newsletter" hidden
+     role="status" aria-live="polite">
+  
+  <div class="success-popup__card">
+    <button type="button" class="success-popup__close" data-success-close aria-label="Fermer">
+      <svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 2l10 10M12 2L2 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+    </button>
+
+    <span class="success-popup__icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+  <path d="M5 12.5L10 17.5L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+    </span>
+
+    <div class="success-popup__text">
+      <p class="success-popup__title" id="rs-newsletter-success-title">Merci pour votre inscription !</p>
+            <p class="success-popup__body">Vous recevrez nos dernières actualités et contenus exclusifs.</p>
+          </div>
+
+    
+    <span class="success-popup__progress" data-success-progress aria-hidden="true"></span>
+  </div>
+</div>
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/ronn_square_back/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script id="rs-main-js" type="module" src="/wp-content/themes/ronn_square_back/dist/assets/js/main-BMgt75Yu.js"></script>
+<script id="wp-consent-api-js-extra">
+var consent_api = {"consent_type":"","waitfor_consent_hook":"","cookie_expiration":"30","cookie_prefix":"wp_consent","services":[]};
+//# sourceURL=wp-consent-api-js-extra
+</script>
+<script id="wp-consent-api-js" src="/wp-content/plugins/wp-consent-api/assets/js/wp-consent-api.min.js?ver=2.0.1"></script>
+</body>
+</html>
